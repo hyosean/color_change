@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> one page motion site </title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+	<script type="text/javascript" src="js/custom.js"></script> 
+	<script type="text/javascript" src="js/button_motion.js"></script> 
+
+	<script src="https://kit.fontawesome.com/1499036eeb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- 버튼 클릭시 숨겨진 영역(슬라이드/비디오) -->
+	<section id="aside">
+
+		<div class="wrap" id="aside1">
+			<ul class="idx1">
+				<li class="img1"></li>
+				<li class="img2"></li>
+				<li class="img3"></li>
+			</ul>
+		</div>
+
+		<div class="wrap" id="aside2">
+			<ul class="idx2">
+				<li class="img1"></li>
+				<li class="img2"></li>
+				<li class="img3"></li>
+			</ul>
+		</div>
+
+		<div class="wrap" id="aside3">
+			<ul class="idx3">
+				<li class="img1"></li>
+				<li class="img2"></li>
+				<li class="img3"></li>
+			</ul>
+		</div>
+
+		<div class="wrap" id="aside4">
+			<ul class="idx4">
+				<li class="img1"></li>
+				<li class="img2"></li>
+				<li class="img3"></li>
+			</ul>
+		</div>
+
+		<div class="btn">
+			<a href="#" class="prev"></a>
+			<a href="#" class="next"></a>
+			<a href="#" class="close"></a>
+		</div>
+
+	</section>
+
+	<section id="wrap">
+		<article class="inner">
+			<div class="hideMenu">
+				<div class="wrap">
+					<div class="menuBtnWrap">
+						<a href="#" class="menuBtn">
+						</a>
+					</div>
+					<div class="menu_header">
+						<div class="user">
+							<i class="fas fa-user"></i>
+						</div>
+						<p class="user_name">
+							user_name
+						</p>
+					</div>
+					<div class="menu_contents">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fas fa-bookmark"></i>
+								My page</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-briefcase"></i>
+								Requests</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-envelope"></i>
+								Messagess</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="far fa-credit-card"></i>
+								Payment</a>
+							</li>
+							<li>
+								<a href="">
+									<i class="fas fa-certificate"></i>
+								Vip shop</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu_footer">
+						<a href="#" class="bell">		
+							<i class="far fa-bell"></i>
+							<p>3</p>
+						</a>
+						<a href="#" class="wish">
+							<i class="fas fa-heart"></i>
+							<p>Wish List</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<nav>
+				<div class="menuBtnWrap">
+					<a href="#" class="menuBtn">
+					</a>
+				</div>
+				<ul class="nav">
+					<li><a href="#con1" class="on">
+						Basic
+					</a></li>
+					<li><a href="#con2">
+						Special
+					</a></li>
+					<li><a href="#con3">
+						Branch
+					</a></li>
+					<li><a href="#con4">
+						Award
+					</a></li>
+				</ul>
+			</nav>
+			
+	<!-- 메인 폰트 컨텐츠 겹치는영역 -->
+			
+			<main>
+				<div id="con1" class="contents on">
+					<h2>
+						Basic collection 
+						<br>
+						of natural product
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus natus obcaecati unde nam vel quasi, tempore minus delectus, ut nemo corrupti impedit eius non, sunt ipsam soluta illo sit.
+					</p>
+					<div class="btn">
+						<div class="products">
+							<a href="#aside1">
+								View products
+							</a>
+						</div>
+						<div class="promo">
+							<a href="#"><span>▶</span></a>
+							<p>
+								View Promo
+							</p>
+						</div>
+					</div>
+				</div>
+	
+				<div id="con2" class="contents">
+					<h2>
+						Special collection 
+						<br>
+						of natural product
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus natus obcaecati unde nam vel quasi, tempore minus delectus, ut nemo corrupti impedit eius non, sunt ipsam soluta illo sit.
+					</p>
+					<div class="btn">
+						<div class="products">
+							<a href="#aside2">
+								View products
+							</a>
+						</div>
+						<div class="promo">
+							<a href="#"><span>▶</span></a>
+							<p>
+								View Promo
+							</p>
+						</div>
+					</div>
+				</div>
+	
+				<div id="con3" class="contents">
+					<h2>
+						Branch collection 
+						<br>
+						of natural product
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus natus obcaecati unde nam vel quasi, tempore minus delectus, ut nemo corrupti impedit eius non, sunt ipsam soluta illo sit.
+					</p>
+					<div class="btn">
+						<div class="products">
+							<a href="#aside3">
+								View products
+							</a>
+						</div>
+						<div class="promo">
+							<a href="#"><span>▶</span></a>
+							<p>
+								View Promo
+							</p>
+						</div>
+					</div>
+				</div>
+	
+				<div id="con4" class="contents">
+					<h2>
+						Award collection 
+						<br>
+						of natural product
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus natus obcaecati unde nam vel quasi, tempore minus delectus, ut nemo corrupti impedit eius non, sunt ipsam soluta illo sit.
+					</p>
+					<div class="btn">
+						<div class="products">
+							<a href="#aside4">
+								View products
+							</a>
+						</div>
+						<div class="promo">
+							<a href="#"><span>▶</span></a>
+							<p>
+								View Promo
+							</p>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<div class="footer">
+				<div class="sns">
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-youtube"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-envelope"></i>
+					</a>
+				</div>
+				<div class="var">
+					<i class="fas fa-plus"></i>
+					<div><span></span></div>
+					<i class="fas fa-arrow-right"></i>
+				</div>
+			</div>
+		</article>
+
+		<article class="img_wrap">
+			<!-- 우측 이미지 -->
+			<div id="img1" class="imgs on"></div>
+			<div id="img2" class="imgs"></div>
+			<div id="img3" class="imgs"></div>
+			<div id="img4" class="imgs"></div>
+
+			<div class="aside">
+				<a href="#"><i class="fas fa-search"></i></a>
+				<a href="#"><i class="fas fa-user"></i></a>
+				<a href="#"><i class="fas fa-bookmark"></i></a>
+			</div>
+			<!-- 우측 이미지 하단 -->
+			<div class="preview on" data="#con2">
+				<div class="prev_img prev1"></div>
+				<a href="#">
+					Special Collection
+				</a>
+				<span class="arrow"></span>
+			</div>
+			<div class="preview" data="#con3">
+				<div class="prev_img prev2"></div>
+				<a href="#">
+					Branch Collection
+				</a>
+				<span class="arrow"></span>
+			</div>
+			<div class="preview" data="#con4">
+				<div class="prev_img prev3"></div>
+				<a href="#">
+					Award Collection
+				</a>
+				<span class="arrow"></span>
+			</div>
+			<div class="preview" data="#con1">
+				<div class="prev_img prev4"></div>
+				<a href="#">
+					Basic Collection
+				</a>
+				<span class="arrow"></span>
+			</div>
+
+		</article>
+
+	</section>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
