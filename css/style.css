@@ -1,16 +1,19 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:wght@300;400;700;900|Noto+Serif|Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:wght@100;300;400;700;900|Noto+Serif|Titillium+Web&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Serif KR','Noto Serif','Titillium Web';
+  font-family: 'Noto Serif KR', 'Noto Serif', 'Titillium Web';
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
-a, img {
+a,
+img {
   vertical-align: top;
   text-decoration: none;
   outline: 1;
@@ -38,6 +41,7 @@ a, img {
   width: 80px;
   height: 80px;
   background: url(../img/btn/btn_prev.png) no-repeat center center/cover;
+  background-size: 60px 60px;
 }
 
 #aside .btn-slide .next {
@@ -49,6 +53,7 @@ a, img {
   width: 80px;
   height: 80px;
   background: url(../img/btn/btn_next.png) no-repeat center center/cover;
+  background-size: 60px 60px;
 }
 
 #aside .btn-slide .close {
@@ -94,14 +99,14 @@ a, img {
       -ms-flex-direction: column;
           flex-direction: column;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-  opacity: 0;
+  display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 #aside .wrap ul li dl dt {
   color: #fff;
-  font-size: 6vw;
+  font-size: 4vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition-delay: 0.3s;
@@ -111,7 +116,7 @@ a, img {
 }
 
 #aside .wrap ul li dl dd {
-  width: 85%;
+  width: 700px;
   word-break: keep-all;
   font-size: 28px;
   line-height: 1;
@@ -127,7 +132,7 @@ a, img {
 }
 
 #aside .wrap ul li dl dd + dd {
-  width: 60%;
+  width: 500px;
   padding-top: 20px;
   font-size: 12px;
   line-height: 1.5;
@@ -137,10 +142,11 @@ a, img {
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
   margin-top: -10px;
+  font-weight: 300;
 }
 
 #aside .wrap ul li dl.on {
-  opacity: 1;
+  display: block;
 }
 
 #aside .wrap.on {
@@ -160,7 +166,11 @@ a, img {
 }
 
 #aside .wrap.on ul.idx1 .img1 {
-  background: url(../img/product/a1.jpg) no-repeat 50% 55%/110%;
+  background: url(../img/product/a1.jpg) no-repeat 50% 60%/100%;
+}
+
+#aside .wrap.on ul.idx1 .img1 dl {
+  margin-top: 30vh;
 }
 
 #aside .wrap.on ul.idx1 .img2 {
@@ -181,6 +191,15 @@ a, img {
 
 #aside .wrap.on ul.idx2 .img3 {
   background: url(../img/product/b3.jpg) no-repeat 50% 40%/cover;
+}
+
+#aside .wrap.on ul.idx3 dl {
+  text-shadow: none;
+}
+
+#aside .wrap.on ul.idx3 dl dt,
+#aside .wrap.on ul.idx3 dl dd {
+  color: #012a24;
 }
 
 #aside .wrap.on ul.idx3 .img1 {
@@ -312,7 +331,7 @@ a, img {
   width: 95px;
   height: 95px;
   border-radius: 50%;
-  border: 1.5px solid #efefef;
+  border: 2px solid #efefef;
   -webkit-transform: translate(-4px, -4px);
           transform: translate(-4px, -4px);
 }
@@ -477,8 +496,9 @@ a, img {
 }
 
 #wrap .inner nav .nav li a {
+  font-size: 18px;
   display: inline-block;
-  line-height: 35px;
+  line-height: 34px;
   width: 50px;
   text-align: center;
   font-family: 'Titillium Web';
@@ -490,8 +510,8 @@ a, img {
   content: '';
   display: block;
   width: 0%;
-  height: 1.5px;
-  background: #aaa;
+  height: 2px;
+  background: #888;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -617,7 +637,7 @@ a, img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  border: 1.5px solid #ffc700;
+  border: 2px solid #ffc700;
   text-align: center;
   font-size: 20px;
   -webkit-transition: all 0.3s 0.3s;
@@ -718,7 +738,7 @@ a, img {
 }
 
 #wrap .inner #con1 .btn .promo a {
-  border: 1.5px solid #ffc700;
+  border: 2px solid #ffc700;
 }
 
 #wrap .inner #con1 .btn .promo a span {
@@ -744,7 +764,7 @@ a, img {
 }
 
 #wrap .inner #con2 .btn .promo a {
-  border: 1.5px solid #fc90a7;
+  border: 2px solid #fc90a7;
 }
 
 #wrap .inner #con2 .btn .promo a span {
@@ -770,7 +790,7 @@ a, img {
 }
 
 #wrap .inner #con3 .btn .promo a {
-  border: 1.5px solid #99c9ba;
+  border: 2px solid #99c9ba;
 }
 
 #wrap .inner #con3 .btn .promo a span {
@@ -796,7 +816,7 @@ a, img {
 }
 
 #wrap .inner #con4 .btn .promo a {
-  border: 1.5px solid #aab4ed;
+  border: 2px solid #aab4ed;
 }
 
 #wrap .inner #con4 .btn .promo a span {
@@ -1103,9 +1123,6 @@ a, img {
     left: 30%;
     margin-left: 0;
   }
-  #wrap .inner nav .nav li a {
-    font-size: 18px;
-  }
   #wrap .inner .contents {
     /*----------컨텐츠 모션 -----------*/
   }
@@ -1278,7 +1295,7 @@ a, img {
             box-shadow: 20px 30px 40px #ffc80062;
   }
   #wrap .inner #con1 .btn .promo a {
-    border: 1.5px solid #ffc700;
+    border: 2px solid #ffc700;
   }
   #wrap .inner #con1 .btn .promo a span {
     color: #ffc700;
@@ -1298,7 +1315,7 @@ a, img {
             box-shadow: 20px 30px 40px #fc90a779;
   }
   #wrap .inner #con2 .btn .promo a {
-    border: 1.5px solid #fc90a7;
+    border: 2px solid #fc90a7;
   }
   #wrap .inner #con2 .btn .promo a span {
     color: #fc90a7;
@@ -1318,7 +1335,7 @@ a, img {
             box-shadow: 20px 30px 40px #99c9baa1;
   }
   #wrap .inner #con3 .btn .promo a {
-    border: 1.5px solid #99c9ba;
+    border: 2px solid #99c9ba;
   }
   #wrap .inner #con3 .btn .promo a span {
     color: #99c9ba;
@@ -1338,7 +1355,7 @@ a, img {
             box-shadow: 20px 30px 40px #aab4ed78;
   }
   #wrap .inner #con4 .btn .promo a {
-    border: 1.5px solid #aab4ed;
+    border: 2px solid #aab4ed;
   }
   #wrap .inner #con4 .btn .promo a span {
     color: #aab4ed;

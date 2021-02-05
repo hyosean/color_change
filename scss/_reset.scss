@@ -1,5 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:wght@300;400;700;900|Noto+Serif|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:wght@100;300;400;700;900|Noto+Serif|Titillium+Web&display=swap');
 
-* { margin: 0;padding: 0; font-family: 'Noto Serif KR','Noto Serif','Titillium Web'}
-ul,ol,li { list-style: none;}
-a, img {vertical-align: top;text-decoration: none;outline: 1;}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif KR', 'Noto Serif', 'Titillium Web'
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a,
+img {
+  vertical-align: top;
+  text-decoration: none;
+  outline: 1;
+}
