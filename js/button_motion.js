@@ -122,4 +122,28 @@ $(document).ready(function() {
        
     });
 
+    $('.products a').on('click', function() {
+        $('dl').addClass('on');
+        var hasClass =  $('dl').hasClass('on');
+        if(hasClass) {
+            $('dt, dd').animate({
+                'opacity':1,
+                'margin-top':0
+            },500);
+        }
+    });
+    $('.btn-slide a').on('click', function() {
+        console.log('o');
+        $('dl').removeClass('on');
+        var hasClass =  $('dl').hasClass('on');
+        if(!hasClass) {
+            $('dl').addClass('on');
+            $('dt, dd').animate({
+                'opacity':1,
+                'margin-top':0
+            },500);
+        }
+        
+    });
+
 });

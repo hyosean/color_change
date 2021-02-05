@@ -1,5 +1,4 @@
 @import 'reset';
-@import url('https://fonts.googleapis.com/css?family=Anaheim|Changa|Cormorant+SC|DM+Serif+Display|Do+Hyeon|Krona+One|Roboto|Roboto+Condensed|Titillium+Web&display=swap');
 
 /*--- 버튼 클릭시 숨겨진영역 ---*/
 #aside {
@@ -9,7 +8,7 @@
     background: rgba(0,0,0,0.8);
     z-index: 9; display: none;
 
-    .btn {
+    .btn-slide {
         .prev {
             position: absolute;
             left: 7%; opacity: 0.5;
@@ -37,7 +36,7 @@
             &::after {
                 content: 'CLOSE'; display: block;
                 font-size: 20px; color: #fff;
-                margin-left: -55px;
+                margin-left: -65px;
                 opacity: 0.45;
                 margin-top: 13px;
                 letter-spacing: 2px;
@@ -52,6 +51,61 @@
         transform: translateY(-50%);
         width: 100%;
         display: none;
+        ul {
+            li {
+                dl {
+                    width: 50%;
+                    margin-top: 3vh;
+                    transform: translateX(30%);
+                    display: flex;
+                    flex-direction: column;
+                    text-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+                    opacity: 0;
+                    transition: 0.5s;
+                    
+                    dt {
+                        color: #fff;
+                        font-size: 6vw;
+                        transition: 0.5s;
+                        transition-delay: 0.3s;
+                        opacity: 0;
+                        margin-top: -10px;
+                    }
+                    dd {
+                        width: 85%;
+                        word-break: keep-all;
+                        font-size: 28px;
+                        line-height: 1;
+                        letter-spacing: 2px;
+                        color: #fff;
+                        margin: 0;
+                        transition: 0.5s;
+                        transition-delay: 0.6s;
+                        opacity: 0;
+                        margin-top: -10px;
+                    }
+                    dd + dd {
+                        width: 60%;
+                        padding-top: 20px;
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: 0;
+                        color: #fff;
+                        text-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+                        transition-delay: 1s;
+                        margin-top: -10px;
+                    }
+                    &.on {
+                        opacity: 1;
+                        // dt, dd {
+                        //     opacity: 1;
+                        //     margin-top: 0;
+                        // }
+                    }
+                }
+
+            }
+        }
         
         &.on {
             display: block;
@@ -63,17 +117,18 @@
                     display: block;
                     width: 33.333%;
                     height: 65vh;
+                  
                 }
     
                 &.idx1 {
                     .img1 {
-                        background: url(../img/product/a1.jpg)no-repeat 50% 55%/cover;
+                        background: url(../img/product/a1.jpg)no-repeat 50% 55%/110%;
                     }
                     .img2 {
-                        background: url(../img/product/a2.jpg)no-repeat 50% 20%/cover;
+                        background: url(../img/product/a2.jpg)no-repeat -10% 20%/100%;
                     }
                     .img3 {
-                        background: url(../img/product/a3.jpg)no-repeat 50% 40%/cover;
+                        background: url(../img/product/a3.jpg)no-repeat 50% 35%/cover;
                     }
                 }
                 &.idx2 {
@@ -144,13 +199,13 @@
 
                     .menuBtn { 
                         display: inline-block;
-                        width: 28px;
-                        height: 5px;
+                        width: 25px;
+                        height: 3px;
 
                         &::after {
                             content: '';
-                            width: 28px;
-                            height: 5px;
+                            width: 25px;
+                            height: 3px;
                             transform: translateY(15px) rotate(45deg);
                             background: #fff;
                             position: absolute;
@@ -159,8 +214,8 @@
                         } 
                         &::before {
                             content: '';
-                            width: 28px;
-                            height: 5px;
+                            width: 25px;
+                            height: 3px;
                             transform: translateY(-5px) rotate(-45deg);
                             background: #fff;
                             position: absolute;
@@ -297,40 +352,38 @@
                 top: 50%;
                 .menuBtn { 
                     display: inline-block;
-                    width: 28px;
-                    height: 5px;
+                    width: 25px;
+                    height: 3px;
                     background: #555;
                     left: 0;
                     transition: all 0.1s;
 
                     &::after {
                         content: '';
-                        width: 28px;
-                        height: 5px;
+                        width: 25px;
+                        height: 3px;
                         background: #555;
                         position: absolute;
                         left: 0;
-                        top: -10px;  
+                        top: -8px;  
                         transition: all 0.3s;        
                     } 
                     &::before {
                         content: '';
-                        width: 28px;
-                        height: 5px;
+                        width: 25px;
+                        height: 3px;
                         background: #555;
                         position: absolute;
                         left: 0;
-                        top: 10px; 
+                        top: 8px; 
                         transition: all 0.3s;           
                     }
                     
                 }
             }
             .nav {
-                width: 50%;
-                position: absolute;
-                left: 45%;
-                top: 0;
+                width: 350px;
+                margin-left: 65px;
                 display: flex;
                 justify-content: space-between;
 
@@ -375,6 +428,7 @@
                 font-size: 4vw;
                 transition: all 0.3s;
                 opacity: 0;
+                font-weight: 900;
                 transform: translateY(-20px);
 
                 &::after {
@@ -465,9 +519,9 @@
                     }
                     p {
                         font-size: 17px;
-                        line-height: 35px;
+                        line-height: 36px;
                         color: #f3b700;
-                        margin-left: 22px;
+                        margin-left: 16px;
                         transition: all 0.3s 0.4s;
                         opacity: 0;
                         transform: translateY(10px);
@@ -875,6 +929,7 @@
                     width: 45%;
                     position: absolute;
                     left: 30%;
+                    margin-left: 0;
                     li {
                         a {
                             font-size: 18px;
