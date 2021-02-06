@@ -74,7 +74,7 @@
                     transform: translateX(30%);
                     display: flex;
                     flex-direction: column;
-                    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+                    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
                     display: none;
                     transition: 0.5s;
 
@@ -108,7 +108,7 @@
                         line-height: 1.5;
                         letter-spacing: 0;
                         color: #fff;
-                        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+                        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
                         transition-delay: 1s;
                         margin-top: -10px;
                         font-weight: 300;
@@ -169,13 +169,13 @@
                     }
 
                     .img3 {
-                        background: url(../img/product/b3.jpg)no-repeat 50% 40%/cover;
+                        background: url(../img/product/b3.jpg)no-repeat 50% 30%/cover;
                     }
                 }
 
                 &.idx3 {
                     dl {
-                        text-shadow: none;
+                        text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
 
                         dt,
                         dd {
@@ -184,25 +184,43 @@
                     }
 
                     .img1 {
-                        background: url(../img/product/c1.jpg)no-repeat 50% 55%/cover;
+                        background: url(../img/product/c1.jpg)no-repeat 0% 55%/120%;
                     }
 
                     .img2 {
-                        background: url(../img/product/c2.jpg)no-repeat 50% 20%/cover;
+                        background: url(../img/product/c2.jpg)no-repeat 50% 30%/cover;
+                        dl {
+                            margin-top: 15vh;
+                            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    
+                            dt,
+                            dd {
+                                color: #fff;
+                            }
+                        }
                     }
 
                     .img3 {
-                        background: url(../img/product/c3.jpg)no-repeat 50% 35%/cover;
+                        background: url(../img/product/c3.jpg)no-repeat 50% 25%/cover;
                     }
                 }
 
                 &.idx4 {
                     .img1 {
-                        background: url(../img/product/d1.jpg)no-repeat center center/cover;
+                        background: url(../img/product/d1.jpg)no-repeat center 30%/cover;
                     }
 
                     .img2 {
-                        background: url(../img/product/d2.jpg)no-repeat 50% 30%/cover;
+                        background: url(../img/product/d2.jpg)no-repeat 50% 0%/cover;
+                        dl {
+                            text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
+    
+                            dt,
+                            dd {
+                                color: #261d4c;
+                            }
+                        }
+                        
                     }
 
                     .img3 {
@@ -246,32 +264,33 @@
                 .menuBtnWrap {
                     position: absolute;
                     top: 70px;
-
+                   
                     .menuBtn {
                         display: inline-block;
-                        width: 25px;
-                        height: 3px;
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #fff;
 
                         &::after {
                             content: '';
-                            width: 25px;
+                            width: 20px;
                             height: 3px;
                             transform: translateY(15px) rotate(45deg);
                             background: #fff;
                             position: absolute;
-                            left: 0;
-                            top: -10px;
+                            left: 1;
+                            top: -5px;
                         }
 
                         &::before {
                             content: '';
-                            width: 25px;
+                            width: 20px;
                             height: 3px;
                             transform: translateY(-5px) rotate(-45deg);
                             background: #fff;
                             position: absolute;
-                            left: 0;
-                            top: 10px;
+                            left: 1;
+                            top: 15px;
                         }
                     }
                 }
@@ -280,6 +299,7 @@
                     height: 20vh;
                     box-sizing: border-box;
                     border-bottom: 1px solid #efefef;
+                    position: relative;
 
                     .user {
                         margin: 0 auto;
@@ -306,7 +326,7 @@
                             height: 95px;
                             border-radius: 50%;
                             border: 2px solid #efefef;
-                            transform: translate(-4px, -4px);
+                            transform: translate(-4.5px, -4.5px);
                         }
                     }
 
@@ -315,6 +335,16 @@
                         color: #efefef;
                         font-family: '';
                         font-size: 17px;
+                    }
+                    
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -40px;
+                        display: block;
+                        width: 100%;
+                        height: 5px;
+                        border-top: 1px solid #efefef;
                     }
                 }
 
@@ -334,7 +364,7 @@
                             line-height: 40px;
 
                             i {
-                                padding-left: 11px;
+                                padding: 0 6px 0 15px;
                                 color: #efefef;
                                 font-size: 15px
                             }
@@ -364,42 +394,31 @@
                     height: 10vh;
                     box-sizing: border-box;
                     padding: 25px 20px;
-                    display: flex;
-                    justify-content: space-around;
-
-                    .bell {
+                    
+                    .contact-btn {
                         color: #efefef;
                         display: flex;
-                        width: 31%;
-                        height: 18px;
-                        border-right: 1.2px solid #efefef;
+                        justify-content: center;
 
                         i {
-                            line-height: 0.9;
-                            margin: 0 5px 0 15px;
-                            font-size: 20px;
-                        }
-
-                        p {
-                            line-height: 1;
-                            font-size: 15px;
-                        }
-                    }
-
-                    .wish {
-                        color: #efefef;
-                        display: flex;
-                        width: 50%;
-
+                            width: 20%;
+                            position: relative;
+                            &::after {
+                                content: '';
+                                display: block;
+                                height: 14px;
+                                width: 1px;
+                                background-color: #efefef;
+                                margin: 0 10px;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                opacity: 0.8;
+                            }
+                         }
                         p {
                             font-size: 15px;
                             line-height: 0.8;
-                        }
-
-                        i {
-                            line-height: 1.2;
-                            font-size: 14px;
-                            padding-right: 10px;
                         }
                     }
                 }
