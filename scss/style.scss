@@ -1,5 +1,194 @@
 @import 'reset';
 
+/*--- 사이드 GNB 메뉴 ---*/
+.gnb_menu {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 310px;
+    height: 100vh;
+    transition: all 0.3s;
+    z-index: 5;
+
+    .wrap {
+        padding: 110px 35px;
+
+        .menuBtnClose {
+            position: absolute;
+            top: 70px;
+           
+            .menuBtn {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #fff;
+                border-radius: 3px;
+
+                &::after {
+                    content: '';
+                    width: 20px;
+                    height: 3px;
+                    transform: translateY(15px) rotate(45deg);
+                    background: #fff;
+                    position: absolute;
+                    left: 1;
+                    top: -5px;
+                }
+
+                &::before {
+                    content: '';
+                    width: 20px;
+                    height: 3px;
+                    transform: translateY(-5px) rotate(-45deg);
+                    background: #fff;
+                    position: absolute;
+                    left: 1;
+                    top: 15px;
+                }
+            }
+        }
+
+        .menu_header {
+            padding-bottom: 25px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #efefef;
+            position: relative;
+
+            .user {
+                margin: 0 auto;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                background: #efefef;
+                position: relative;
+                margin-bottom: 10px;
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #ddd;
+                    font-size: 50px;
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 95px;
+                    height: 95px;
+                    border-radius: 50%;
+                    border: 2px solid #efefef;
+                    transform: translate(-4.5px, -4.5px);
+                }
+            }
+
+            .user_name {
+                text-align: center;
+                color: #efefef;
+                font-family: '';
+                font-size: 17px;
+            }
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: -50px;
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #efefef;
+            }
+        }
+
+        .menu_contents {
+            box-sizing: border-box;
+            border-bottom: 1px solid #efefef;
+
+            ul {
+                padding: 25px 30px;
+
+                li {
+                    display: inline-block;
+                    height: 35px;
+                    line-height: 35px;
+                    margin-bottom: 10px;
+                    box-sizing: border-box;
+                    width: 100%;
+
+                    i {
+                        padding: 0 6px 0 15px;
+                        color: #efefef;
+                        font-size: 15px
+                    }
+
+                    a {
+                        padding-left: 14px;
+                        color: #efefef;
+                        font-size: 18px;
+                        font-family: 'Titillium Web';
+                        letter-spacing: 1px;
+                    }
+
+                    &:nth-of-type(2) {
+                        i {
+                            padding: 0 3px 0 15px;
+                        }
+                    }
+
+                    &.on {
+                        background: #efefef;
+                        border-radius: 3px;
+                    }
+
+                    &:hover {
+                        background: #efefef;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+
+        .menu_footer {
+            box-sizing: border-box;
+            padding: 20px 30px 40px;
+            border-bottom: 1px solid #efefef;
+
+            .service-btn {
+                display: block;
+                text-align: center;
+                width: 100%;
+                height: 25px;
+                border: 1px solid #efefef;
+                box-sizing: border-box;
+                font-size: 13px;
+                line-height: 22px;
+                color: #efefef;
+                border-radius: 3px;
+
+                &  + .service-btn {
+                 margin-top: 10px;
+                }
+            }
+            // .signup {
+            //     display: block;
+            //      float: right;
+            //     margin-top: 3px;
+            //     color: #efefef;
+            //     font-size: 13px;
+            //     line-height: 1; 
+           
+            //     i {
+            //         color: #eee;
+            //         font-size: 10px;
+            //         padding: 3px 5px;
+            //     }
+            // }
+        }
+    
+    }
+}
+
 /*--- 버튼 클릭시 숨겨진영역 ---*/
 #aside {
     position: fixed;
@@ -234,7 +423,7 @@
 
 }
 
-#wrap {
+.contant_wrap {
     display: flex;
     position: fixed;
     left: 0;
@@ -249,230 +438,11 @@
         padding: 60px 0 60px 120px;
         position: relative;
 
-        .hideMenu {
-            position: absolute;
-            left: -300px;
-            top: 0;
-            width: 310px;
-            height: 100vh;
-            transition: all 0.3s;
-            z-index: 5;
-
-            .wrap {
-                padding: 110px 35px;
-
-                .menuBtnWrap {
-                    position: absolute;
-                    top: 70px;
-                   
-                    .menuBtn {
-                        display: inline-block;
-                        width: 20px;
-                        height: 20px;
-                        border: 1px solid #fff;
-                        border-radius: 3px;
-
-                        &::after {
-                            content: '';
-                            width: 20px;
-                            height: 3px;
-                            transform: translateY(15px) rotate(45deg);
-                            background: #fff;
-                            position: absolute;
-                            left: 1;
-                            top: -5px;
-                        }
-
-                        &::before {
-                            content: '';
-                            width: 20px;
-                            height: 3px;
-                            transform: translateY(-5px) rotate(-45deg);
-                            background: #fff;
-                            position: absolute;
-                            left: 1;
-                            top: 15px;
-                        }
-                    }
-                }
-
-                .menu_header {
-                    padding-bottom: 25px;
-                    box-sizing: border-box;
-                    border-bottom: 1px solid #efefef;
-                    position: relative;
-
-                    .user {
-                        margin: 0 auto;
-                        width: 90px;
-                        height: 90px;
-                        border-radius: 50%;
-                        background: #efefef;
-                        position: relative;
-                        margin-bottom: 10px;
-
-                        i {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            color: #ddd;
-                            font-size: 50px;
-                        }
-
-                        &::after {
-                            content: '';
-                            display: block;
-                            width: 95px;
-                            height: 95px;
-                            border-radius: 50%;
-                            border: 2px solid #efefef;
-                            transform: translate(-4.5px, -4.5px);
-                        }
-                    }
-
-                    .user_name {
-                        text-align: center;
-                        color: #efefef;
-                        font-family: '';
-                        font-size: 17px;
-                    }
-                    
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: -50px;
-                        display: block;
-                        width: 100%;
-                        height: 1px;
-                        background-color: #efefef;
-                    }
-                }
-
-                .menu_contents {
-                    box-sizing: border-box;
-                    border-bottom: 1px solid #efefef;
-
-                    ul {
-                        padding: 25px 30px;
-
-                        li {
-                            display: inline-block;
-                            height: 35px;
-                            line-height: 35px;
-                            margin-bottom: 10px;
-                            box-sizing: border-box;
-                            width: 100%;
-
-                            i {
-                                padding: 0 6px 0 15px;
-                                color: #efefef;
-                                font-size: 15px
-                            }
-
-                            a {
-                                padding-left: 14px;
-                                color: #efefef;
-                                font-size: 18px;
-                                font-family: 'Titillium Web';
-                                letter-spacing: 1px;
-                            }
-
-                            &.on {
-                                background: #efefef;
-                                border-radius: 3px;
-                            }
-
-                            &:hover {
-                                background: #efefef;
-                                border-radius: 3px;
-                            }
-                        }
-                    }
-                }
-
-                .menu_footer {
-                    box-sizing: border-box;
-                    padding: 20px 30px 40px;
-                    border-bottom: 1px solid #efefef;
-
-                    .service-btn {
-                        display: block;
-                        text-align: center;
-                        width: 100%;
-                        height: 25px;
-                        border: 1px solid #efefef;
-                        box-sizing: border-box;
-                        font-size: 13px;
-                        line-height: 22px;
-                        color: #efefef;
-                        border-radius: 3px;
-
-                        &  + .service-btn {
-                         margin-top: 10px;
-                        }
-                    }
-                    // .signup {
-                    //     display: block;
-                    //      float: right;
-                    //     margin-top: 3px;
-                    //     color: #efefef;
-                    //     font-size: 13px;
-                    //     line-height: 1; 
-                   
-                    //     i {
-                    //         color: #eee;
-                    //         font-size: 10px;
-                    //         padding: 3px 5px;
-                    //     }
-                    // }
-                }
-            
-            }
-        }
-
         nav {
             width: 100%;
             height: 35px;
             position: relative;
             z-index: 4;
-
-            .menuBtnWrap {
-                position: absolute;
-                top: 50%;
-
-                .menuBtn {
-                    display: inline-block;
-                    width: 25px;
-                    height: 3px;
-                    background: #555;
-                    left: 0;
-                    transition: all 0.1s;
-
-                    &::after {
-                        content: '';
-                        width: 25px;
-                        height: 3px;
-                        background: #555;
-                        position: absolute;
-                        left: 0;
-                        top: -8px;
-                        transition: all 0.3s;
-                    }
-
-                    &::before {
-                        content: '';
-                        width: 25px;
-                        height: 3px;
-                        background: #555;
-                        position: absolute;
-                        left: 0;
-                        top: 8px;
-                        transition: all 0.3s;
-                    }
-
-                }
-            }
 
             .nav {
                 width: 350px;
@@ -507,6 +477,44 @@
                         }
                     }
                 }
+            }
+        }
+
+        .menuBtnWrap {
+            display: block;
+            position: absolute;
+            margin-top: 6px;
+
+            .menuBtn {
+                display: inline-block;
+                width: 25px;
+                height: 3px;
+                background: #555;
+                transition: all 0.1s;
+                margin-top: -1.5px;
+
+                &::after {
+                    content: '';
+                    width: 25px;
+                    height: 3px;
+                    background: #555;
+                    position: absolute;
+                    left: 0;
+                    top: 20px;
+                    transition: all 0.3s;
+                }
+
+                &::before {
+                    content: '';
+                    width: 25px;
+                    height: 3px;
+                    background: #555;
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                    transition: all 0.3s;
+                }
+
             }
         }
 
@@ -1057,13 +1065,13 @@
 
 /* 타블렛 아이패드 */
 @media screen and (max-width:770px) {
-    #wrap {
+    .contant_wrap {
         .inner {
             width: 100%;
             padding: 60px 120px;
             position: absolute;
 
-            .hideMenu {
+            .gnb_menu {
                 width: 310px;
             }
 

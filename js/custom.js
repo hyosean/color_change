@@ -1,7 +1,7 @@
 ﻿$(document).ready(function(){	
 
-    var menuOpen = $('nav>.menuBtnWrap');
-    var menuClose = $('.hideMenu>.wrap>.menuBtnWrap');
+    var menuOpen = $('.menuBtnWrap');
+    var menuClose = $('.gnb_menu .menuBtnClose');
      
     /*------- 상단 네비 탭 버튼 --------*/
 
@@ -64,9 +64,10 @@
     });
 
     function menu_on() {
-        var backColor = $('.contents.on >.btn >.products').css('background-color');
+        //사이드 GNB 배경색상 변수
+        var backColor = $('.contents.on .products').css('background-color');
 
-        $('.hideMenu').css({
+        $('.gnb_menu').css({
             'left' : 0,
             'background-color' : backColor
         });
@@ -83,7 +84,7 @@
     }
 
     function menu_off() {
-        $('.hideMenu').css({
+        $('.gnb_menu').css({
             'left' : '-320px'
         });
     }
