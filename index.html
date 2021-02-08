@@ -61,10 +61,10 @@
 				</ul>
 			</div>
 			<div class="menu_footer">
-				<a href="#" class="service-btn">
+				<a href="#" class="serviceBtn">
 					Contact me
 				</a>
-				<a href="#" class="service-btn">
+				<a href="#" class="serviceBtn" id="sign_in">
 					Sign in
 				</a>
 				<!-- <a href="#" class="signup">
@@ -228,7 +228,8 @@
 				</div>
 			</div>
 		</article>
-		<article class="img_wrap">
+
+		<article class="img_wrap sign_in">
 			<!-- 우측 이미지 -->
 			<div id="img1" class="imgs on"></div>
 			<div id="img2" class="imgs"></div>
@@ -270,6 +271,35 @@
 				<span class="arrow"></span>
 			</div>
 
+			<!-- 로그인 폼 -->
+			<div class="sign_in_form">
+				<ul class="sign_tab">
+					<li class="on">Sign in</li>
+					<li>Sign up</li>
+				</ul>
+				<div class="sign_in_wrap">
+					<form action="#">
+						<fieldset>
+							<legend class="sr-only">로그인</legend>
+							<div class="input_group">
+								<div class="input_item">
+									<input type="text" id="input-text01" class="form-control" placeholder="아이디를 입력해 주세요." title="아이디를 입력">
+								</div>
+								<p class="text-invalid" style="display:none;">아이디를 확인해 주세요</p>
+								<div class="input_item">
+									<input type="text" class="form-control" id="input-text02" placeholder="비밀번호를 입력해 주세요" title="비밀번호를 입력">
+								</div>
+								<p class="text-invalid" style="display:none;">비밀번호를 확인해 주세요</p>
+							</div>
+							<button type="submit" class="">로그인</button>
+							<p class="">
+								<input type="checkbox" name="check_login" id="inputcheck01" class="custom-control">
+								<label for="inputcheck01">아이디를 기억합니다.</label>
+							</p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
 		</article>
 	</section>
 

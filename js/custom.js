@@ -63,6 +63,15 @@
         menu_off();
     });
 
+    /*------- 로그인 버튼 --------*/
+    $('#sign_in').on('click', function(e) {
+        e.preventDefault();
+
+        menu_off();
+        $('.img_wrap').addClass('sign_in');
+        $('.sign_in_form').addClass('on');
+    });
+
     function menu_on() {
         //사이드 GNB 배경색상 변수
         var backColor = $('.contents.on .products').css('background-color');
