@@ -114,7 +114,7 @@
 						sit.
 					</p>
 					<div class="btn">
-						<div class="products">
+						<div class="colorBtn">
 							<a href="#aside1">
 								View products
 							</a>
@@ -140,7 +140,7 @@
 						sit.
 					</p>
 					<div class="btn">
-						<div class="products">
+						<div class="colorBtn">
 							<a href="#aside2">
 								View products
 							</a>
@@ -166,7 +166,7 @@
 						sit.
 					</p>
 					<div class="btn">
-						<div class="products">
+						<div class="colorBtn">
 							<a href="#aside3">
 								View products
 							</a>
@@ -192,7 +192,7 @@
 						sit.
 					</p>
 					<div class="btn">
-						<div class="products">
+						<div class="colorBtn">
 							<a href="#aside4">
 								View products
 							</a>
@@ -239,7 +239,7 @@
 			<div class="aside">
 				<a href="#"><i class="fas fa-search"></i></a>
 				<a href="#"><i class="fas fa-user"></i></a>
-				<a href="#"><i class="fas fa-bookmark"></i></a>
+				<a href="/index.html"><i class="fas fa-bookmark"></i></a>
 			</div>
 			<!-- 우측 이미지 하단 -->
 			<div class="preview on" data="#con2">
@@ -272,40 +272,61 @@
 			</div>
 
 			<!-- 로그인 폼 -->
-			<div class="sign_in_form">
-				<ul class="sign_tab">
-					<li class="on">
+			<div class="sign_in_form sign_in">
+				<ul class="sign_tab btn">
+					<li class="serviceBtn on">
 						<a href="#">Sign in</a>
 					</li>
-					<li>
+					<li class="serviceBtn">
 						<a href="#">Sign up</a>
 					</li>
 				</ul>
-				<div class="sign_in_wrap">
+				<div class="sign_in_wrap on">
 					<form action="#">
 						<fieldset>
 							<legend class="sr-only">로그인</legend>
 							<div class="input_wrap">
 								<div class="input_contants">
 									<!-- <label for="loginId">ID</label> -->
-									<input type="text" id="loginId" class="form_basic" placeholder="username"
-										title="아이디를 입력">
-									<p class="text-invalid" style="display:none;">아이디를 확인해 주세요</p>
+									<input type="text" id="loginId" class="form_basic all" placeholder="username"
+										title="사용자 이름을 입력">
 								</div>
-
 								<div class="input_contants">
 									<!-- <label for="loginPw">PW</label> -->
-									<input type="text" class="form_basic" id="loginPw" placeholder="password"
+									<input type="text" class="form_basic all" id="loginPw" placeholder="password"
 										title="비밀번호를 입력">
-									<p class="text-invalid" style="display:none;">비밀번호를 확인해 주세요</p>
 								</div>
-
+								<input type="checkbox" name="check_login" id="inputcheck01">
+								<label for="inputcheck01">Remember your username</label>
+								<div class="btn">
+									<button type="submit" class="colorBtnInput">LOGIN</button>
+								</div>
 							</div>
-							<button type="submit" class="">로그인</button>
-							<p class="">
-								<input type="checkbox" name="check_login" id="inputcheck01" class="custom-control">
-								<label for="inputcheck01">아이디를 기억합니다.</label>
-							</p>
+						</fieldset>
+					</form>
+				</div>
+				<div class="sign_in_wrap sign_up">
+					<form action="#">
+						<fieldset>
+							<legend class="sr-only">회원가입</legend>
+							<div class="input_wrap">
+								<div class="input_contants">
+									<!-- <label for="loginId">ID</label> -->
+									<input type="text" id="loginId" class="form_basic all" placeholder="username"
+										title="아이디를 입력">
+									<!-- <p class="text-invalid" >아이디를 확인해 주세요</p> -->
+								</div>
+								<div class="input_contants">
+									<!-- <label for="loginPw">PW</label> -->
+									<input type="text" class="form_basic all" id="loginPw" placeholder="password"
+										title="비밀번호를 입력">
+									<!-- <p class="text-invalid" >비밀번호를 확인해 주세요</p> -->
+								</div>
+								<input type="checkbox" name="check_login" id="inputcheck01">
+								<label for="inputcheck01">Remember your username</label>
+							</div>
+
+							<button type="submit" class="">Sign up</button>
 						</fieldset>
 					</form>
 				</div>

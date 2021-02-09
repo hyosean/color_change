@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     /* 전체창 열기 닫기 */
 
-    $('.products').on('click', function (e) {
+    $('.colorBtn').on('click', function (e) {
         e.preventDefault();
 
         var aside = $(this).children('a').attr('href');
@@ -13,7 +13,7 @@ $(document).ready(function () {
         $('.wrap').removeClass('on');
         $(aside).addClass('on');
 
-        $('.products').removeClass('on');
+        $('.colorBtn').removeClass('on');
         $(this).addClass('on');
 
     });
@@ -122,7 +122,7 @@ $(document).ready(function () {
 
     });
 
-    $('.products a').on('click', function () {
+    $('.colorBtn a').on('click', function () {
         $('dl').addClass('on');
         var hasClass = $('dl').hasClass('on');
         if (hasClass) {
