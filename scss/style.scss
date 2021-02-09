@@ -1087,10 +1087,30 @@
                 width: 50%;
                 height: 400px;
                 border: 1px solid red;
+
+                .sign_tab {
+                    width: 100%;
+
+                    li {
+                        display: inline-block;
+                        a {
+                            display: block;
+                            color: #555;
+                            font-family: 'Titillium Web';
+                            font-size: 18px;
+                            width: 100px;
+                            padding-bottom: 20px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .sign_in_wrap {}
             }
         }
     }
 }
+
+
 
 /* 타블렛 아이패드 */
 @media screen and (max-width:770px) {
