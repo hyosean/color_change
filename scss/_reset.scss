@@ -82,7 +82,7 @@ select.form_basic {
 	max-width: 100%;
 	line-height: normal;
 	padding-right: 30px;
-	background: #fff url(/img/btn/ico-chevron-down@2x.png) no-repeat right 12px center;
+	background: #fff url(/img/btn/btn-down.png) no-repeat right 12px center;
 	background-size: 17px auto;
 
 	&::-ms-expand {
@@ -163,8 +163,8 @@ input {
 		&:checked {
 			+label {
 				&:before {
-					background: #fff url(/img/btn/ico-checkbox-checked.png) no-repeat 45% center;
-					background-size: 13px 10px;
+					background: #fff url(/img/btn/btn-checked.png) no-repeat 45% center;
+					background-size: 8px 8px;
 				}
 			}
 		}
@@ -180,42 +180,13 @@ input {
 		&:checked {
 			+label {
 				&:before {
-					background: #fff url(/img/btn/ico-radio-checked.png) no-repeat center center;
-					background-size: 10px 10px;
+					background: #fff url(/img/btn/btn-checked.png) no-repeat center center;
+					background-size: 8px 8px;
 				}
 			}
 		}
 	}
 
-	// &.custom_label {
-	// 	+label {
-	// 		&:before {
-	// 			border: 0;
-	// 			border-radius: 50%;
-	// 			background: #aaa url(/img/btn/ico-checkbox-checked-white.png) no-repeat 45% center !important;
-	// 			background-size: 11px 8px !important;
-	// 		}
-	// 	}
-
-	// 	&:checked {
-	// 		+label {
-	// 			&:before {
-	// 				// background-color: $primary !important;
-	// 			}
-	// 		}
-	// 	}
-
-	// 	&:disabled {
-	// 		+label {
-	// 			color: #959595;
-
-	// 			&:before {
-	// 				opacity: 1;
-	// 				background-color: #dadada !important;
-	// 			}
-	// 		}
-	// 	}
-	// }
 }
 
 .input_contants {

@@ -82,7 +82,7 @@ select.form_basic {
   max-width: 100%;
   line-height: normal;
   padding-right: 30px;
-  background: #fff url(/img/btn/ico-chevron-down@2x.png) no-repeat right 12px center;
+  background: #fff url(/img/btn/btn-down.png) no-repeat right 12px center;
   background-size: 17px auto;
 }
 
@@ -143,8 +143,8 @@ input[type=checkbox]:disabled + label:before, input[type=radio]:disabled + label
 }
 
 input[type=checkbox]:checked + label:before {
-  background: #fff url(/img/btn/ico-checkbox-checked.png) no-repeat 45% center;
-  background-size: 13px 10px;
+  background: #fff url(/img/btn/btn-checked.png) no-repeat 45% center;
+  background-size: 8px 8px;
 }
 
 input[type=radio] + label:before {
@@ -152,8 +152,8 @@ input[type=radio] + label:before {
 }
 
 input[type=radio]:checked + label:before {
-  background: #fff url(/img/btn/ico-radio-checked.png) no-repeat center center;
-  background-size: 10px 10px;
+  background: #fff url(/img/btn/btn-checked.png) no-repeat center center;
+  background-size: 8px 8px;
 }
 
 .input_contants {

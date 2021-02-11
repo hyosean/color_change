@@ -72,6 +72,29 @@
         $('.sign_in_form').addClass('on');
     });
 
+    /*------- 로그인 탭 버튼 --------*/
+    $('.sign_tab li').on('click', function () {
+        $('.sign_tab li').removeClass('on');
+        $(this).addClass('on');
+
+        var backColor = $('.colorBtnInput').css('background-color');
+        var hasClass = $('.sign_tab li').hasClass('on');
+        var idx = $('.sign_tab >li.on').index();
+        if (hasClass) {
+            console.log(idx);
+            $('.sign_tab >li').css({
+                'background-color': '#efefef'
+            });
+            $('.sign_tab >li.on').css({
+                'background-color': backColor
+            });
+            $('.sign_in_wrap').removeClass('on');
+            $('.sign_in_wrap').eq(idx).addClass('on');
+        }
+
+    })
+
+    /*------- 색상 함수 --------*/
     function menu_on() {
         //사이드 GNB 배경색상 변수
         var backColor = $('.contents.on .colorBtn').css('background-color');
@@ -101,6 +124,7 @@
         $('.sign_tab >li.on').css({
             'background-color': backColor
         });
+
         $('.colorBtnInput').css({
             'background-color': backColor
         });
