@@ -3,9 +3,9 @@
     var menuOpen = $('.menuBtnWrap');
     var menuClose = $('.gnb_menu .menuBtnClose');
 
-    /*------- 상단 네비 탭 버튼 --------*/
+    /*------- 상단 네비 비쥬얼 컨텐츠 버튼 --------*/
 
-    $('.nav>li>a').on('click', function (e) {
+    $('.contants_lnb li>a').on('click', function (e) {
         e.preventDefault();
 
         var target = $(this).attr('href');
@@ -14,7 +14,7 @@
         menu_off();
         var_move();
 
-        $('.nav>li>a').removeClass('on');
+        $('.contants_lnb li>a').removeClass('on');
         $(this).addClass('on');
         $('.contents').removeClass('on');
         $(target).addClass('on');
@@ -41,8 +41,8 @@
         $(target2).addClass('on');
 
         /*------- 상단 네비 탭 버튼 활성화--------*/
-        $('.nav>li>a').removeClass('on');
-        $('.nav>li').eq(idx).children('a').addClass('on');
+        $('.contants_lnb>li>a').removeClass('on');
+        $('.contants_lnb>li').eq(idx).children('a').addClass('on');
 
         /*------- 우측 이미지 영역 활성화 --------*/
         $('.img_wrap>.imgs').removeClass('on');
@@ -53,26 +53,37 @@
 
     });
 
-    /*------- 메뉴버튼 --------*/
-
+    /*------- 사이드 gnb 메뉴버튼 --------*/
+    //사이드 메뉴열기
     menuOpen.on('click', function () {
         menu_on();
     });
-
+    //사이드메뉴 닫기
     menuClose.on('click', function () {
         menu_off();
     });
+    //사이드 메뉴 이동시
+    // $('.menu_contents li>a').on('click', function() {
+    // });
 
     /*------- 로그인 버튼 --------*/
-    $('#sign_in').on('click', function (e) {
-        e.preventDefault();
-
+    $('.signInBtn').on('click', function () {
         menu_off();
         $('.img_wrap').addClass('sign_in');
         $('.sign_in_form').addClass('on');
+
+        var backColor = $('.contents.on .colorBtn').css('background-color');
+
+        $('.sign_tab >li.on').css({
+            'background-color': backColor
+        });
+
+        $('.colorBtnInput').css({
+            'background-color': backColor
+        });
     });
 
-    /*------- 로그인 탭 버튼 --------*/
+    /*------- 로그인 & 회원가입 탭 버튼 --------*/
     $('.sign_tab li').on('click', function () {
         $('.sign_tab li').removeClass('on');
         $(this).addClass('on');
@@ -92,12 +103,25 @@
             $('.sign_in_wrap').eq(idx).addClass('on');
         }
 
-    })
+    });
+    /*------- 인풋 링크 버튼 --------*/
+    $('.input_link_text').on('mouseover', function () {
+        var backColor = $('.colorBtnInput').css('background-color');
+        $(this).css({
+            'color': backColor
+        })
+    });
+    $('.input_link_text').on('mouseleave', function () {
+        $(this).css({
+            'color': '#777'
+        })
+    }); 
+
 
     /*------- 색상 함수 --------*/
     function menu_on() {
         //사이드 GNB 배경색상 변수
-        var backColor = $('.contents.on .colorBtn').css('background-color');
+        var backColor = $('.on .colorBtn').css('background-color');
 
         $('.gnb_menu').css({
             'left': 0,
@@ -120,15 +144,6 @@
                 'color': '#efefef'
             });
         });
-
-        $('.sign_tab >li.on').css({
-            'background-color': backColor
-        });
-
-        $('.colorBtnInput').css({
-            'background-color': backColor
-        });
-
     }
 
     function menu_off() {

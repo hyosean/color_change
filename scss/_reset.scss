@@ -100,6 +100,13 @@ textarea.form_basic {
 	color: #777;
 }
 
+label {
+	font-size: 13px;
+	color: #777;
+	font-family: 'Titillium Web';
+	padding-left: 5px;
+}
+
 input {
 	$size: 13px;
 
@@ -113,9 +120,6 @@ input {
 		+label {
 			position: relative;
 			height: $size;
-			font-size: 13px;
-			color: #777;
-			font-family: 'Titillium Web';
 
 			&:before {
 				box-sizing: border-box;
@@ -195,7 +199,30 @@ input {
 	&+.input_contants {
 		margin-top: 10px;
 	}
+
+	&.input_align {
+		.input_align_right {
+			display: block;
+			float: right;
+			padding: 3px 5px 3px 3px;
+		}
+		&::after {
+			content: '';
+			clear: both;
+			display: block;
+		}
+	}
 }
+
+.input_link_text {
+	text-decoration: underline;
+	font-size: 13px;
+	color: #777;
+	font-family: 'Titillium Web';
+	line-height: 24px;
+	vertical-align: middle;
+}
+
 
 //버튼 가이드
 
