@@ -5,8 +5,7 @@
 
     /*------- 상단 네비 비쥬얼 컨텐츠 버튼 --------*/
 
-    $('.contants_lnb li>a').on('click', function (e) {
-        e.preventDefault();
+    $('.contants_lnb li>a').on('click', function () {
 
         var target = $(this).attr('href');
         var i = $(this).parent('li').index();
@@ -115,7 +114,7 @@
         $(this).css({
             'color': '#777'
         })
-    }); 
+    });
 
 
     /*------- 색상 함수 --------*/
