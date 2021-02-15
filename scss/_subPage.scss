@@ -1,5 +1,6 @@
-
+//sub 소팅이미지 리스트
 .contant_wrap.sub_contant_wrap {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 
@@ -31,47 +32,81 @@
 											}
 											&:nth-of-type(1) {
 													.colorBtn {
-															background-color: #ffc700;
+														background-color: #aab4ed;
 													}
 											}
 											&:nth-of-type(2) {
 													 .colorBtn {
-															background-color: #fc90a7;
+														background-color: #ffc700;
 													}
 											}
 											&:nth-of-type(3) {
 													.colorBtn {
-															background-color: #aab4ed;     
+														background-color: #fc90a7;  
 													}
 											}
 									}
 							}
 					}
+
+					h2.sub_title {
+						color: #555;
+						//text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+						line-height: 1.2;
+						font-size: 4vw;
+						transition: all 0.3s;
+						padding: 15px 0px 10px;
+					}
+
 					//이미지 솔팅 
 					.img_list_btn {
 						ul {
+							height: 45px;
+							padding: 10px 0px;
 							li {
-								
+								margin-right: 5px;
+								a {
+									color: #777;
+									//background-color: #efefef;
+									padding: 0 10px;
+									border-color: #777;
+								}
+								&.on {
+									a {
+										color: #fff;
+										background-color: #777;
+									}
+								}
 							}
 						}
 					}
 					.img_list {
-						height: inherit;
-						overflow-y: scroll;
 					
 						ul {
 							width: 100%;
 							li.sorting_img {
 								width:25%;
 								float:left;
-								padding:12px;
+								padding:10px;
 
 								.sorting_img_wrap {
 									background:#fff; border-radius:3px;
-									box-shadow:5px 5px 10px rgba(0,0,0,0.1); padding:15px;
+									box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);padding:15px;
 									
 									img {
 										width: 100%;
+									}
+									strong {
+										display: inline-block;
+										font-size: 15px;
+										color: #555;
+										padding-top: 10px;
+										padding-bottom: 3px;
+									}
+									p {
+										font-size: 10px;
+										color: #888;
+										margin-bottom:10px;
 									}
 								}
 								&::after {
