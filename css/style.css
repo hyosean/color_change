@@ -1774,7 +1774,7 @@ input[type=radio]:checked + label:before {
 }
 
 .contant_wrap.sub_contant_wrap .inner.sub_inner nav .contants_lnb li:nth-of-type(2) .colorBtn {
-  background-color: #ffc700;
+  background-color: #f3b700;
 }
 
 .contant_wrap.sub_contant_wrap .inner.sub_inner nav .contants_lnb li:nth-of-type(3) .colorBtn {
