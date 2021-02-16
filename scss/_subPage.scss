@@ -1,4 +1,4 @@
-//sub 소팅이미지 리스트
+
 .contant_wrap.sub_contant_wrap {
 	position: relative;
 	display: flex;
@@ -57,7 +57,7 @@
 				}
 			}
 
-			h2.sub_title {
+			.sub_title {
 				color: #555;
 				//text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 				line-height: 1.2;
@@ -66,80 +66,91 @@
 				padding: 15px 0px 10px;
 			}
 
-			//이미지 솔팅 
-			.img_list_btn {
-				ul {
-					height: 45px;
-					padding: 10px 0px;
+			.sub_title_md {}
 
-					li {
-						margin-right: 5px;
+			.sub_title_sm {}
 
-						a {
-							color: #777;
-							//background-color: #efefef;
-							padding: 0 10px;
-							border-color: #777;
-						}
+		}
+	}
+}
 
-						&.on {
-							a {
-								color: #fff;
-								background-color: #777;
-							}
-						}
-					}
-				}
+/* subpage 소팅이미지 리스트 레이아웃 */
+.img_list_btn {
+	ul {
+		height: 45px;
+		padding: 10px 0px;
+
+		li {
+			margin-right: 5px;
+
+			a {
+				color: #777;
+				//background-color: #efefef;
+				padding: 0 10px;
+				border-color: #777;
 			}
 
-			.img_list {
-
-				ul {
-					width: 100%;
-
-					li.sorting_img {
-						width: 25%;
-						float: left;
-						padding: 10px;
-
-						.sorting_img_wrap {
-							background: #fff;
-							border-radius: 3px;
-							box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-							padding: 15px;
-
-							img {
-								width: 100%;
-							}
-
-							strong {
-								display: inline-block;
-								font-size: 15px;
-								color: #555;
-								padding-top: 10px;
-								padding-bottom: 3px;
-							}
-
-							p {
-								font-size: 10px;
-								color: #888;
-								margin-bottom: 10px;
-							}
-						}
-
-						&::after {
-							content: '';
-							display: block;
-							clear: both;
-						}
-					}
+			&.on {
+				a {
+					color: #fff;
+					background-color: #777;
 				}
 			}
 		}
 	}
+}
+.img_list {
 
+	ul {
+		width: 100%;
+
+		li.sorting_img {
+			width: 25%;
+			float: left;
+			padding: 10px;
+
+			.sorting_img_wrap {
+				background: #fff;
+				border-radius: 3px;
+				box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+				padding: 15px;
+
+				img {
+					width: 100%;
+				}
+
+				strong {
+					display: inline-block;
+					font-size: 15px;
+					color: #555;
+					padding-top: 10px;
+					padding-bottom: 3px;
+				}
+
+				p {
+					font-size: 10px;
+					color: #888;
+					margin-bottom: 10px;
+				}
+			}
+
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		}
+	}
 }
 
+/* subpage02 이미지&텍스트 레이아웃 */
+.imgntext {
+	.imgntext_wrap {
+		.imgntext_img {}
+
+		.imgntext_text {}
+	}
+}
 
 
 // /* 타블렛 아이패드 */

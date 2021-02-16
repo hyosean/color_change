@@ -26,6 +26,21 @@ img {
 	display: none;
 }
 
+/* --------- font 스타일 -------- */
+.text_color_yellow {
+	color: #ffc700;
+}
+
+.text_bold {
+	font-weight: bold !important;
+}
+
+.p_indent {
+	p + p {
+		margin-top: 15px;
+	}
+}
+
 /* --------- form 스타일 -------- */
 fieldset {
 	border: none;
@@ -76,7 +91,6 @@ fieldset {
 		opacity: 1;
 	}
 }
-
 
 select.form_basic {
 	max-width: 100%;
@@ -223,9 +237,7 @@ input {
 	vertical-align: middle;
 }
 
-
 //버튼 가이드
-
 .serviceBtn {
 	display: block;
 	text-align: center;

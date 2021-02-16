@@ -27,6 +27,19 @@ img {
   display: none;
 }
 
+/* --------- font 스타일 -------- */
+.text_color_yellow {
+  color: #ffc700;
+}
+
+.text_bold {
+  font-weight: bold !important;
+}
+
+.p_indent p + p {
+  margin-top: 15px;
+}
+
 /* --------- form 스타일 -------- */
 fieldset {
   border: none;
@@ -1781,7 +1794,7 @@ input[type=radio]:checked + label:before {
   background-color: #fc90a7;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner h2.sub_title {
+.contant_wrap.sub_contant_wrap .inner.sub_inner .sub_title {
   color: #555;
   line-height: 1.2;
   font-size: 4vw;
@@ -1790,37 +1803,38 @@ input[type=radio]:checked + label:before {
   padding: 15px 0px 10px;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list_btn ul {
+/* subpage 소팅이미지 리스트 레이아웃 */
+.img_list_btn ul {
   height: 45px;
   padding: 10px 0px;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list_btn ul li {
+.img_list_btn ul li {
   margin-right: 5px;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list_btn ul li a {
+.img_list_btn ul li a {
   color: #777;
   padding: 0 10px;
   border-color: #777;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list_btn ul li.on a {
+.img_list_btn ul li.on a {
   color: #fff;
   background-color: #777;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list ul {
+.img_list ul {
   width: 100%;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list ul li.sorting_img {
+.img_list ul li.sorting_img {
   width: 25%;
   float: left;
   padding: 10px;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list ul li.sorting_img .sorting_img_wrap {
+.img_list ul li.sorting_img .sorting_img_wrap {
   background: #fff;
   border-radius: 3px;
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
@@ -1828,11 +1842,11 @@ input[type=radio]:checked + label:before {
   padding: 15px;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list ul li.sorting_img .sorting_img_wrap img {
+.img_list ul li.sorting_img .sorting_img_wrap img {
   width: 100%;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list ul li.sorting_img .sorting_img_wrap strong {
+.img_list ul li.sorting_img .sorting_img_wrap strong {
   display: inline-block;
   font-size: 15px;
   color: #555;
@@ -1840,15 +1854,17 @@ input[type=radio]:checked + label:before {
   padding-bottom: 3px;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list ul li.sorting_img .sorting_img_wrap p {
+.img_list ul li.sorting_img .sorting_img_wrap p {
   font-size: 10px;
   color: #888;
   margin-bottom: 10px;
 }
 
-.contant_wrap.sub_contant_wrap .inner.sub_inner .img_list ul li.sorting_img::after {
+.img_list ul li.sorting_img::after {
   content: '';
   display: block;
   clear: both;
 }
+
+/* subpage02 이미지&텍스트 레이아웃 */
 /*# sourceMappingURL=style.css.map */
