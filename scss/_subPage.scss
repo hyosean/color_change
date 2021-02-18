@@ -57,19 +57,6 @@
 				}
 			}
 
-			.sub_title {
-				color: #555;
-				//text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-				line-height: 1.2;
-				font-size: 4vw;
-				transition: all 0.3s;
-				padding: 15px 0px 10px;
-			}
-
-			.sub_title_md {}
-
-			.sub_title_sm {}
-
 		}
 	}
 }
@@ -146,10 +133,35 @@
 /* subpage02 이미지&텍스트 레이아웃 */
 .imgntext {
 	.imgntext_wrap {
-		.imgntext_img {}
+		margin-top: 40px;
+		display: flex;
 
-		.imgntext_text {}
+		.imgntext_img {
+			max-width: 400px;
+
+			img {
+				width: 100%;
+				background-size: cover;
+			}
+			& + .imgntext_text {
+				margin-left: 40px;
+			}
+			& + .imgntext_img {
+				margin-left: 10px;
+			}
+		}
+
+		.imgntext_text {
+
+			& + .imgntext_img {
+				margin-left: 40px;
+			}
+		}
 	}
+
+	// & +.imgntext {
+	
+	// }
 }
 
 
