@@ -58,10 +58,21 @@
 						width: 140px;
 						left: 110px;
 						li {
-							a {
+							.contents_sub_title {
 								font-size: 25px;
+								display: inline-block;
+								line-height: 34px;
+								min-width: 50px;
+								text-align: center;
+								font-family: 'Titillium Web';
+								color: #555;
 
 								.colorBtn {
+									display: inline-block;
+									width: 10px;
+									height: 10px;
+									margin-left: 5px;
+									border-radius: 50%;
 									background-color: #99c9ba;
 								}
 							}
@@ -143,7 +154,7 @@
 	}
 }
 
-/* subpage02 이미지&텍스트 레이아웃 */
+/* subpage 이미지&텍스트 레이아웃 */
 .imgntext {
 	.imgntext_wrap {
 		margin-top: 45px;

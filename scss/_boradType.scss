@@ -1,0 +1,84 @@
+
+/* borad type 레이아웃 */
+.sub_contant_wrap {
+	.sub_inner {
+		nav {
+			.contants_2 {
+				width: 240px !important;
+			}
+		}
+	}
+}
+
+.borad_search_wrap {
+	width:100%; 
+	border-top:1px solid #555; border-bottom:1px solid #555; padding:15px; text-align:center; 
+	margin-top: 10px;
+	margin-bottom:80px;
+
+	label {
+		color: #555;
+		 margin-right:20px;
+	}
+
+	input[type=text] {
+    width:40%; height:40px; border:1px solid #aaa; margin-right:20px; padding:0px 20px; background:rgba(0,0,0,0.03);
+	}
+}
+
+/* 타블렛 아이패드 */
+@media screen and (max-width:770px) {
+	.contant_wrap.sub_contant_wrap {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	
+		.inner {
+			&.sub_inner {
+				width: 100%;
+				padding: 30px 60px;
+	
+				nav {
+					position: fixed;
+					background-color: #fff;
+					top: 0;    
+					left: 0;
+					right: 0;
+					padding: 35px;
+
+					.menuBtnWrap {
+						left: 60px;
+						.menuBtn {
+							background: #555;
+							&::after {background: #555;}
+							&::before {background: #555;}
+						}
+					}
+					.contants_lnb {
+						right: 60px;
+						// li {
+						// 	a {
+						// 		.colorBtn {
+						// 		}
+						// 	}
+						//}
+					}
+
+					&.on {
+						box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+					}
+				}
+			}
+		}
+	}
+	.sub_title { margin-top: 35px;}
+	.sub_title_md {font-size: 28px;line-height: 32px;} 
+	.sub_title_sm { margin-top: 15px; font-size: 15px; line-height: 20px;}
+
+
+}
+
+// /* 모바일 */
+// @media screen and (max-width:539px) {
+
+// }
