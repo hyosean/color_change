@@ -23,6 +23,10 @@ img {
   outline: 1;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 .sr-only {
   display: none;
 }
@@ -34,6 +38,10 @@ img {
 
 .text_bold {
   font-weight: bold !important;
+}
+
+.text_left {
+  text-align: left !important;
 }
 
 .p_indent p {
@@ -331,6 +339,7 @@ input[type=radio]:checked + label:before {
 }
 
 .btn .colorBtnInput {
+  font-size: 13px;
   margin-top: 33px;
   height: 45px;
   text-align: center;
@@ -341,6 +350,49 @@ input[type=radio]:checked + label:before {
   color: #fff;
   letter-spacing: 2px;
   cursor: pointer;
+}
+
+.borad_btn_wrap {
+  margin-bottom: 5px;
+}
+
+.borad_btn_wrap .float_left {
+  float: left;
+}
+
+.borad_btn_wrap .float_right {
+  float: right;
+}
+
+.borad_btn_wrap .total {
+  font-size: 15px;
+  color: #666;
+  font-family: 'Titillium Web';
+}
+
+.borad_btn_wrap .total strong {
+  padding-left: 5px;
+  vertical-align: baseline;
+}
+
+.borad_btn_wrap .boradBtn {
+  display: block;
+  height: 30px;
+  line-height: 25px;
+  padding: 1px;
+  min-width: 50px;
+  background-color: #666;
+}
+
+.borad_btn_wrap .boradBtn:focus, .borad_btn_wrap .boradBtn:hover {
+  background-color: #aab4ed;
+  border-color: #aab4ed;
+}
+
+.borad_btn_wrap:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 /*--- 사이드 GNB 메뉴 ---*/
@@ -2106,28 +2158,139 @@ input[type=radio]:checked + label:before {
   width: 240px !important;
 }
 
+/* borad 검색박스 레이아웃 */
 .borad_search_wrap {
   width: 100%;
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #555;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
   padding: 15px;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 80px;
-}
-
-.borad_search_wrap label {
-  color: #555;
-  margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 .borad_search_wrap input[type=text] {
   width: 40%;
-  height: 40px;
-  border: 1px solid #aaa;
   margin-right: 20px;
   padding: 0px 20px;
+  border-color: #aaa;
+}
+
+.borad_search_wrap .searchBtn {
+  min-width: 110px;
+  max-width: 140px;
+  width: 20%;
+  height: 40px;
+  background: #666;
+  color: #fff;
+  font-size: 13px;
+  border: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* borad 리스트 레이아웃 */
+.borad_list_wrap table {
+  width: 100%;
+  border-top: 2px solid #777;
+  border-bottom: 2px solid #777;
+  margin-bottom: 30px;
+}
+
+.borad_list_wrap tr:nth-of-type(even) {
   background: rgba(0, 0, 0, 0.03);
+}
+
+.borad_list_wrap th {
+  font-size: 13px;
+  color: #777;
+  padding: 10px 0;
+}
+
+.borad_list_wrap td {
+  min-width: 50px;
+  font-size: 13px;
+  color: #999;
+  padding: 10px 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.borad_list_wrap td.text_width {
+  max-width: 100px;
+}
+
+.borad_list_wrap td a {
+  color: #999;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+.borad_list_wrap td:hover a {
+  text-decoration: underline;
+}
+
+.borad_list_wrap tbody tr:hover {
+  background-color: #efefef;
+}
+
+.borad_list_wrap .borad_line_gray {
+  border-bottom: 1px solid #777;
+}
+
+.borad_pagination {
+  width: 100%;
+  text-align: center;
+}
+
+.borad_pagination .paginationBtn {
+  font-size: 10px;
+  letter-spacing: 3px;
+  display: block;
+  width: 80px;
+  height: 25px;
+  background: #666;
+  color: #fff;
+  line-height: 25px;
+  border-radius: 3px;
+}
+
+.borad_pagination .prev {
+  float: left;
+}
+
+.borad_pagination .next {
+  float: right;
+}
+
+.borad_pagination .numbers {
+  display: inline-block;
+}
+
+.borad_pagination .numbers a {
+  font-size: 13px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  line-height: 1;
+  border: 1px solid #666;
+  color: #666;
+  border-radius: 3px;
+}
+
+.borad_pagination .numbers a:hover, .borad_pagination .numbers a.on {
+  background: #666;
+  color: #fff;
+}
+
+.borad_pagination:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 /* 타블렛 아이패드 */
@@ -2184,6 +2347,21 @@ input[type=radio]:checked + label:before {
     margin-top: 15px;
     font-size: 15px;
     line-height: 20px;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 539px) {
+  .borad_pagination .numbers {
+    display: inline-block;
+  }
+  .borad_pagination .numbers a {
+    display: none;
+  }
+  .borad_pagination:after {
+    content: '';
+    display: block;
+    clear: both;
   }
 }
 /*# sourceMappingURL=style.css.map */

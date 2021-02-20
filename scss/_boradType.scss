@@ -10,21 +10,120 @@
 	}
 }
 
+/* borad 검색박스 레이아웃 */
 .borad_search_wrap {
 	width:100%; 
-	border-top:1px solid #555; border-bottom:1px solid #555; padding:15px; text-align:center; 
+	border-top:1px solid #777; 
+	border-bottom:1px solid #777; 
+	padding:15px; text-align:center; 
 	margin-top: 10px;
-	margin-bottom:80px;
-
-	label {
-		color: #555;
-		 margin-right:20px;
-	}
+	margin-bottom: 50px;
 
 	input[type=text] {
-    width:40%; height:40px; border:1px solid #aaa; margin-right:20px; padding:0px 20px; background:rgba(0,0,0,0.03);
+		width:40%;  
+		margin-right:20px; 
+		padding:0px 20px; 
+		border-color: #aaa;
+	}
+
+	.searchBtn {
+		min-width: 110px;
+    max-width: 140px;
+    width: 20%; 
+		height:40px;
+		background:#666;  color:#fff; 
+		font-size: 13px;
+		border: none;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		text-align:center; cursor:pointer
 	}
 }
+/* borad 리스트 레이아웃 */
+.borad_list_wrap {
+	table {
+		width:100%; 
+		border-top:2px solid #777; 
+		border-bottom:2px solid #777; margin-bottom:30px;
+	}
+	tr:nth-of-type(even) {
+		background:rgba(0,0,0,0.03);
+	}
+	th {
+		font-size: 13px;
+		color: #777;
+		padding: 10px 0;
+	}
+	td {
+		min-width: 50px;
+		font-size: 13px;
+		color: #999;
+		padding: 10px 0;
+		text-align: center;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		
+	&.text_width {
+		max-width: 100px;
+	}
+		a {
+			color: #999;
+			white-space: nowrap;
+			word-break: break-all;
+		}
+		&:hover {
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+	
+	tbody {
+		tr {
+			&:hover {
+				background-color: #efefef;
+			}
+		}
+	}
+	.borad_line_gray {
+		border-bottom: 1px solid #777;
+	}
+}
+
+.borad_pagination {
+	width:100%; text-align:center;
+
+	.paginationBtn {
+		font-size: 10px;
+		letter-spacing: 3px;
+		display:block;width:80px; height:25px;
+		background:#666; color:#fff;
+		line-height: 25px; border-radius: 3px;
+	}
+ 	.prev { float:left;}
+	.next {float: right;}
+
+	.numbers {
+		display: inline-block;
+
+		a {
+			font-size: 13px;
+			display:inline-block; 
+			width:25px; height:25px; 
+			padding: 5px;
+    line-height: 1;
+			border:1px solid #666; color:#666; 
+			border-radius: 3px;
+
+			&:hover,
+			&.on {background:#666; color:#fff;}
+
+		}
+	}
+
+	&:after {content:''; display:block; clear:both;}
+}
+
 
 /* 타블렛 아이패드 */
 @media screen and (max-width:770px) {
@@ -78,7 +177,18 @@
 
 }
 
-// /* 모바일 */
-// @media screen and (max-width:539px) {
+/* 모바일 */
+@media screen and (max-width:539px) {
 
-// }
+	.borad_pagination {
+		.numbers {
+			display: inline-block;
+	
+			a {
+				display: none;
+			}
+		}
+	
+		&:after {content:''; display:block; clear:both;}
+	}
+}

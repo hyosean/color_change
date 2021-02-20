@@ -22,6 +22,10 @@ img {
 	outline: 1;
 }
 
+table { 
+	border-collapse: collapse;
+}
+
 .sr-only {
 	display: none;
 }
@@ -33,6 +37,10 @@ img {
 
 .text_bold {
 	font-weight: bold !important;
+}
+
+.text_left {
+	text-align: left !important;
 }
 
 .p_indent {
@@ -354,6 +362,7 @@ input {
 	}
 
 	.colorBtnInput {
+		font-size: 13px;
 		margin-top: 33px;
 		height: 45px;
 		text-align: center;
@@ -365,3 +374,45 @@ input {
 		cursor: pointer;
 	}
 }
+
+.borad_btn_wrap {
+	margin-bottom: 5px;
+
+	.float_left {
+		float: left;
+	}
+	.float_right {
+		float: right;
+	}
+
+	.total {
+		font-size: 15px;
+		color: #666;
+		font-family: 'Titillium Web';
+
+		strong {
+			padding-left: 5px;
+			vertical-align: baseline;
+		}
+	}
+
+	.boradBtn {
+		display: block;
+		height: 30px;
+		line-height: 25px;
+		padding: 1px;
+		min-width: 50px;
+		background-color: #666;
+
+		&:focus ,
+		&:hover {
+			background-color: #aab4ed;
+			border-color: #aab4ed;
+		}
+	}
+
+	&:after {
+		content: ''; display: block; clear: both;
+	}
+}
+
