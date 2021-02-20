@@ -1825,6 +1825,19 @@ input[type=radio]:checked + label:before {
   background-color: #fc90a7;
 }
 
+.contant_wrap.sub_contant_wrap .inner.sub_inner nav .contants_lnb.contants_lnb_oneli {
+  width: 140px;
+  left: 110px;
+}
+
+.contant_wrap.sub_contant_wrap .inner.sub_inner nav .contants_lnb.contants_lnb_oneli li a {
+  font-size: 25px;
+}
+
+.contant_wrap.sub_contant_wrap .inner.sub_inner nav .contants_lnb.contants_lnb_oneli li a .colorBtn {
+  background-color: #99c9ba;
+}
+
 /* subpage 소팅이미지 리스트 레이아웃 */
 .img_list_btn ul {
   height: 45px;
@@ -2047,9 +2060,6 @@ input[type=radio]:checked + label:before {
     width: 100%;
     background-size: cover;
     position: relative;
-  }
-  .imgntext .imgntext_wrap .imgntext_img img.img_center {
-    bottom: 130px;
   }
   .imgntext .imgntext_wrap .imgntext_img + .imgntext_text {
     margin-left: 0px;

@@ -54,6 +54,19 @@
 							}
 						}
 					}
+					&.contants_lnb_oneli {
+						width: 140px;
+						left: 110px;
+						li {
+							a {
+								font-size: 25px;
+
+								.colorBtn {
+									background-color: #99c9ba;
+								}
+							}
+						}
+					}
 				}
 			}
 
@@ -282,10 +295,6 @@
 					width: 100%;
 					background-size: cover;
 					position: relative;
-					
-					&.img_center {
-						bottom: 130px;
-					}
 				}
 				& + .imgntext_text {
 					margin-left: 0px;
