@@ -1995,7 +1995,7 @@ input[type=radio]:checked + label:before {
 }
 
 .imgntext .imgntext_wrap .imgntext_img {
-  max-width: 400px;
+  max-width: 500px;
   min-width: 300px;
 }
 
