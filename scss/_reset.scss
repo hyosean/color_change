@@ -136,7 +136,8 @@ select.form_basic {
 	line-height: normal;
 	padding-right: 30px;
 	background: #fff url(/img/btn/btn-down.png) no-repeat right 12px center;
-	background-size: 17px auto;
+	background-size: 12px 12px;
+	margin-right: 5px;
 
 	&::-ms-expand {
 		display: none;
@@ -399,15 +400,18 @@ input {
 	.boradBtn {
 		display: block;
 		height: 30px;
-		line-height: 25px;
-		padding: 1px;
+		line-height: 22px;
+		padding: 1px 10px;
 		min-width: 50px;
-		background-color: #666;
+		font-weight: bold;
+		background-color: #fff;
+		border: 2px solid #777;
+		color: #666;
 
 		&:focus ,
 		&:hover {
-			background-color: #aab4ed;
-			border-color: #aab4ed;
+			background-color: #777;
+			color: #fff;
 		}
 	}
 

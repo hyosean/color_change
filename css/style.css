@@ -135,7 +135,8 @@ select.form_basic {
   line-height: normal;
   padding-right: 30px;
   background: #fff url(/img/btn/btn-down.png) no-repeat right 12px center;
-  background-size: 17px auto;
+  background-size: 12px 12px;
+  margin-right: 5px;
 }
 
 select.form_basic::-ms-expand {
@@ -378,15 +379,18 @@ input[type=radio]:checked + label:before {
 .borad_btn_wrap .boradBtn {
   display: block;
   height: 30px;
-  line-height: 25px;
-  padding: 1px;
+  line-height: 22px;
+  padding: 1px 10px;
   min-width: 50px;
-  background-color: #666;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #777;
+  color: #666;
 }
 
 .borad_btn_wrap .boradBtn:focus, .borad_btn_wrap .boradBtn:hover {
-  background-color: #aab4ed;
-  border-color: #aab4ed;
+  background-color: #777;
+  color: #fff;
 }
 
 .borad_btn_wrap:after {
@@ -2169,17 +2173,18 @@ input[type=radio]:checked + label:before {
   margin-bottom: 50px;
 }
 
-.borad_search_wrap input[type=text] {
-  width: 40%;
-  margin-right: 20px;
-  padding: 0px 20px;
+.borad_search_wrap .form_basic {
   border-color: #aaa;
 }
 
+.borad_search_wrap input[type=text] {
+  width: 40%;
+  margin-right: 15px;
+  padding: 0px 20px;
+}
+
 .borad_search_wrap .searchBtn {
-  min-width: 110px;
-  max-width: 140px;
-  width: 20%;
+  padding: 0 25px;
   height: 40px;
   background: #666;
   color: #fff;
@@ -2192,11 +2197,14 @@ input[type=radio]:checked + label:before {
 }
 
 /* borad 리스트 레이아웃 */
-.borad_list_wrap table {
-  width: 100%;
+.borad_list_wrap {
   border-top: 2px solid #777;
   border-bottom: 2px solid #777;
   margin-bottom: 30px;
+}
+
+.borad_list_wrap table {
+  width: 100%;
 }
 
 .borad_list_wrap tr:nth-of-type(even) {
@@ -2241,6 +2249,7 @@ input[type=radio]:checked + label:before {
   border-bottom: 1px solid #777;
 }
 
+/* borad 페이지네이션 레이아웃 */
 .borad_pagination {
   width: 100%;
   text-align: center;
@@ -2291,6 +2300,37 @@ input[type=radio]:checked + label:before {
   content: '';
   display: block;
   clear: both;
+}
+
+/* borad 박스형 리스트 레이아웃 */
+.borad_box_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 2px solid #777;
+  border-bottom: 2px solid #777;
+  margin-bottom: 30px;
+}
+
+.borad_box_wrap .box_item {
+  margin-bottom: 5px;
+}
+
+.borad_box_wrap .box_item .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 /* 타블렛 아이패드 */
