@@ -2383,7 +2383,7 @@ input[type=radio]:checked + label:before {
 .borad_box_wrap .box_list .box_item .subject_area .subject {
   color: #777;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .borad_box_wrap .box_list .box_item .subject_area .ico_new {
@@ -2403,9 +2403,10 @@ input[type=radio]:checked + label:before {
 }
 
 .borad_box_wrap .box_list .box_item .info_area {
+  margin-top: 15px;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-      flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
