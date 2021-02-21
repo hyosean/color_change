@@ -20,7 +20,11 @@
 	margin-bottom: 50px;
 
 	.form_basic {
-		border-color: #aaa;
+		border-color: #555;
+		opacity: 0.5;
+
+		&:focus,
+		&:hover { opacity: 1;}
 	}
 
 	input[type=text] {
@@ -134,7 +138,7 @@
 	border-top:2px solid #777; 
 	border-bottom:2px solid #777; 
 	margin-bottom:30px;
-	padding: 5px 0;
+	padding: 15px 6%;
 
 	.box_list {
 		margin: 5px;
@@ -147,7 +151,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 			border: 1px solid #ccc;
-			padding: 10px 15px;
+			padding: 15px 20px;
 			border-radius: 3px;
 
 			.subject_area {
