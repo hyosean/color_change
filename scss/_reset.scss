@@ -22,7 +22,7 @@ img {
 	outline: 1;
 }
 
-table { 
+table {
 	border-collapse: collapse;
 }
 
@@ -50,7 +50,7 @@ table {
 		word-break: break-all;
 	}
 
-	p + p {
+	p+p {
 		margin-top: 15px;
 	}
 }
@@ -221,7 +221,7 @@ input {
 		&:checked {
 			+label {
 				&:before {
-					background: #fff url(/img/btn/btn-checked.png) no-repeat 45% center;
+					background: #fff url(../img/btn/btn-checked.png) no-repeat 45% center;
 					background-size: 8px 8px;
 				}
 			}
@@ -238,7 +238,7 @@ input {
 		&:checked {
 			+label {
 				&:before {
-					background: #fff url(/img/btn/btn-checked.png) no-repeat center center;
+					background: #fff url(../img/btn/btn-checked.png) no-repeat center center;
 					background-size: 8px 8px;
 				}
 			}
@@ -260,6 +260,7 @@ input {
 			float: right;
 			padding: 3px 5px 3px 3px;
 		}
+
 		&::after {
 			content: '';
 			clear: both;
@@ -401,6 +402,7 @@ input {
 	.float_left {
 		float: left;
 	}
+
 	.float_right {
 		float: right;
 	}
@@ -427,7 +429,7 @@ input {
 		border: 2px solid #777;
 		color: #666;
 
-		&:focus ,
+		&:focus,
 		&:hover {
 			background-color: #777;
 			color: #fff;
@@ -435,9 +437,8 @@ input {
 	}
 
 	&:after {
-		content: ''; display: block; clear: both;
+		content: '';
+		display: block;
+		clear: both;
 	}
 }
-
-
-
