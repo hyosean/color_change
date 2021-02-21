@@ -220,7 +220,7 @@
 
 
 /* 타블렛 아이패드 */
-@media screen and (max-width:770px) {
+@media screen and (max-width:800px) {
 	.contant_wrap.sub_contant_wrap {
 		position: relative;
 		display: flex;
@@ -283,7 +283,7 @@
 	}
 
 	.sub_title_sm {
-		margin-top: 15px;
+		margin-top: 20px;
 		font-size: 15px;
 		line-height: 20px;
 	}
@@ -320,7 +320,7 @@
 	/* subpage02 이미지&텍스트 레이아웃 */
 	.imgntext {
 		.imgntext_wrap {
-			margin-top: 15px;
+			margin-top: 30px;
 			flex-direction: column;
 
 			.imgntext_img {
