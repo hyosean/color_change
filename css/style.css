@@ -356,7 +356,7 @@ input[type=radio]:checked + label:before {
 .btn.center_btn {
   width: 100%;
   border-top: 1px solid #ccc;
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .btn.center_btn .moreBtn {
@@ -2193,8 +2193,25 @@ input[type=radio]:checked + label:before {
 }
 
 .borad_search_wrap .form_basic {
+  color: #555;
   border-color: #555;
   opacity: 0.5;
+}
+
+.borad_search_wrap .form_basic::-webkit-input-placeholder {
+  color: #666;
+}
+
+.borad_search_wrap .form_basic:-ms-input-placeholder {
+  color: #666;
+}
+
+.borad_search_wrap .form_basic::-ms-input-placeholder {
+  color: #666;
+}
+
+.borad_search_wrap .form_basic::placeholder {
+  color: #666;
 }
 
 .borad_search_wrap .form_basic:focus, .borad_search_wrap .form_basic:hover {
@@ -2236,14 +2253,14 @@ input[type=radio]:checked + label:before {
 }
 
 .borad_list_wrap th {
-  font-size: 13px;
+  font-size: 15px;
   color: #777;
   padding: 10px 0;
 }
 
 .borad_list_wrap td {
   min-width: 50px;
-  font-size: 13px;
+  font-size: 15px;
   color: #999;
   padding: 10px 0;
   text-align: center;
@@ -2422,6 +2439,10 @@ input[type=radio]:checked + label:before {
 
 .borad_box_wrap .box_list .box_item .info_area .left span + span {
   margin-left: 5px;
+}
+
+.borad_box_wrap .box_list .box_item:focus, .borad_box_wrap .box_list .box_item:hover {
+  border-color: #777;
 }
 
 /* 타블렛 아이패드 */

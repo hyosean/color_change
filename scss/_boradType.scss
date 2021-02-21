@@ -20,8 +20,10 @@
 	margin-bottom: 50px;
 
 	.form_basic {
+		color: #555;
 		border-color: #555;
 		opacity: 0.5;
+		&::placeholder { color: #666;}
 
 		&:focus,
 		&:hover { opacity: 1;}
@@ -55,13 +57,13 @@
 		background:rgba(0,0,0,0.03);
 	}
 	th {
-		font-size: 13px;
+		font-size: 15px;
 		color: #777;
 		padding: 10px 0;
 	}
 	td {
 		min-width: 50px;
-		font-size: 13px;
+		font-size: 15px;
 		color: #999;
 		padding: 10px 0;
 		text-align: center;
@@ -198,6 +200,11 @@
 				.left {
 					span + span { margin-left: 5px;}
 				}
+			}
+
+			&:focus,
+			&:hover {
+				border-color: #777;
 			}
 		}
 	}
