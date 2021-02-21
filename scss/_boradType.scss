@@ -72,7 +72,7 @@
 		max-width: 100px;
 	}
 		a {
-			color: #999;
+			color: #777;
 			white-space: nowrap;
 			word-break: break-all;
 		}
@@ -141,10 +141,10 @@
 	padding: 15px 6%;
 
 	.box_list {
-		margin: 5px;
-		flex: 0 0 calc(33.333333% - 10px);
-		width: calc(33.333333% - 10px);
-		max-width:  calc(33.333333% - 10px);
+		margin: 10px;
+		flex: 0 0 calc(33.333333% - 20px);
+		width: calc(33.333333% - 20px);
+		max-width:  calc(33.333333% - 20px);
 
 		.box_item {
 			display: flex;

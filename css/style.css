@@ -356,7 +356,7 @@ input[type=radio]:checked + label:before {
 .btn.center_btn {
   width: 100%;
   border-top: 1px solid #ccc;
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .btn.center_btn .moreBtn {
@@ -2256,7 +2256,7 @@ input[type=radio]:checked + label:before {
 }
 
 .borad_list_wrap td a {
-  color: #999;
+  color: #777;
   white-space: nowrap;
   word-break: break-all;
 }
@@ -2341,12 +2341,12 @@ input[type=radio]:checked + label:before {
 }
 
 .borad_box_wrap .box_list {
-  margin: 5px;
+  margin: 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(33.333333% - 10px);
-          flex: 0 0 calc(33.333333% - 10px);
-  width: calc(33.333333% - 10px);
-  max-width: calc(33.333333% - 10px);
+      -ms-flex: 0 0 calc(33.333333% - 20px);
+          flex: 0 0 calc(33.333333% - 20px);
+  width: calc(33.333333% - 20px);
+  max-width: calc(33.333333% - 20px);
 }
 
 .borad_box_wrap .box_list .box_item {
