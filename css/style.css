@@ -2405,7 +2405,8 @@ input[type=radio]:checked + label:before {
 }
 
 .borad_box_wrap .box_list .box_item .subject_area .ico_new {
-  margin-top: 3px;
+  position: absolute;
+  margin: 4px 8px;
   display: inline-block;
   width: 13px;
   height: 13px;
