@@ -76,7 +76,9 @@ table {
   font-weight: lighter;
   text-transform: uppercase;
   font-size: 18px;
-  padding-bottom: 5px;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  margin-bottom: 5px;
 }
 
 /* --------- form 스타일 -------- */
@@ -2392,7 +2394,6 @@ input[type=radio]:checked + label:before {
   white-space: normal;
   max-height: 50px;
   min-height: 50px;
-  line-height: 26px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
