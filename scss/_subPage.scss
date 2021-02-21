@@ -257,12 +257,14 @@
 
 					.contants_lnb {
 						right: 60px;
-						// li {
-						// 	a {
-						// 		.colorBtn {
-						// 		}
-						// 	}
-						//}
+
+						li {
+							a {
+								font-size: 17px;
+								// .colorBtn {
+								// }
+							}
+						}
 					}
 
 					&.on {

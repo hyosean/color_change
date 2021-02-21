@@ -2094,6 +2094,9 @@ input[type=radio]:checked + label:before {
   .contant_wrap.sub_contant_wrap .inner.sub_inner nav .contants_lnb {
     right: 60px;
   }
+  .contant_wrap.sub_contant_wrap .inner.sub_inner nav .contants_lnb li a {
+    font-size: 17px;
+  }
   .contant_wrap.sub_contant_wrap .inner.sub_inner nav.on {
     -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
@@ -2396,6 +2399,7 @@ input[type=radio]:checked + label:before {
   min-height: 50px;
   text-overflow: ellipsis;
   overflow: hidden;
+  color: #777;
 }
 
 .borad_box_wrap .box_list .box_item .subject_area .subject {
@@ -2448,7 +2452,7 @@ input[type=radio]:checked + label:before {
 }
 
 /* 타블렛 아이패드 */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1000px) {
   .contant_wrap.sub_contant_wrap {
     position: relative;
     display: -webkit-box;
@@ -2531,7 +2535,25 @@ input[type=radio]:checked + label:before {
 }
 
 /* 모바일 */
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 700px) {
+  .sub_contant_wrap .sub_inner nav .contants_2 {
+    left: 100px;
+    width: 55% !important;
+  }
+  .sub_title {
+    font-size: 24px;
+  }
+  /* borad 리스트 레이아웃 */
+  .borad_list_wrap th {
+    font-size: 12px;
+    padding: 5px 1px;
+  }
+  .borad_list_wrap td {
+    min-width: 30px;
+    font-size: 12px;
+    padding: 5px 1px;
+  }
+  /* borad 페이지네이션 레이아웃 */
   .borad_pagination .numbers {
     display: inline-block;
   }
@@ -2542,6 +2564,39 @@ input[type=radio]:checked + label:before {
     content: '';
     display: block;
     clear: both;
+    margin-bottom: 60px;
+  }
+  /* borad 검색박스 레이아웃 */
+  .borad_search_wrap {
+    margin-bottom: 35px;
+  }
+  .borad_search_wrap select.form_basic {
+    width: 90%;
+    margin-right: 0;
+  }
+  .borad_search_wrap select.form_basic + input[type=text] {
+    margin-top: 10px;
+  }
+  .borad_search_wrap input[type=text] {
+    width: 90%;
+    margin-right: 0;
+  }
+  .borad_search_wrap .searchBtn {
+    width: 90%;
+    margin-top: 10px;
+  }
+  /* borad 박스형 리스트 레이아웃 */
+  .borad_box_wrap {
+    padding: 15px 0;
+  }
+  .borad_box_wrap .box_list {
+    margin: 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
