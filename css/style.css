@@ -2406,7 +2406,7 @@ input[type=radio]:checked + label:before {
 
 .borad_box_wrap .box_list .box_item .subject_area .ico_new {
   position: absolute;
-  margin: 4px 8px;
+  margin: 8px 4px;
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -2501,6 +2501,32 @@ input[type=radio]:checked + label:before {
     margin-top: 15px;
     font-size: 15px;
     line-height: 20px;
+  }
+  /* borad 박스형 리스트 레이아웃 */
+  .borad_box_wrap .box_list .box_item .subject_area {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .borad_box_wrap .box_list .box_item .subject_area .subject {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .borad_box_wrap .box_list .box_item .info_area {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 12px;
   }
 }
 

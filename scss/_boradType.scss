@@ -174,7 +174,7 @@
 				}
 				.ico_new {
 					position: absolute;
-					margin: 4px 8px;
+					margin: 8px 4px;
 					display: inline-block;
 					width: 13px;
 					height: 13px;
@@ -259,7 +259,29 @@
 	.sub_title_md {font-size: 28px;line-height: 32px;} 
 	.sub_title_sm { margin-top: 15px; font-size: 15px; line-height: 20px;}
 
+/* borad 박스형 리스트 레이아웃 */
+.borad_box_wrap {
+	.box_list {
+		.box_item {
+			.subject_area {
+				flex: 1 1 auto;
 
+				.subject {
+					font-size: 15px;
+  			  line-height: 16px;
+				}
+			}
+			.info_area {
+				margin-top: 10px;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				font-size: 12px;
+			}
+		}
+	}
+}
 }
 
 /* 모바일 */
