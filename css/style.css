@@ -200,7 +200,7 @@ input[type=checkbox]:disabled + label:before, input[type=radio]:disabled + label
 }
 
 input[type=checkbox]:checked + label:before {
-  background: #fff url(/img/btn/btn-checked.png) no-repeat 45% center;
+  background: #fff url(../img/btn/btn-checked.png) no-repeat 45% center;
   background-size: 8px 8px;
 }
 
@@ -209,7 +209,7 @@ input[type=radio] + label:before {
 }
 
 input[type=radio]:checked + label:before {
-  background: #fff url(/img/btn/btn-checked.png) no-repeat center center;
+  background: #fff url(../img/btn/btn-checked.png) no-repeat center center;
   background-size: 8px 8px;
 }
 
