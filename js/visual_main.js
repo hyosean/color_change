@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    /* 전체창 열기 닫기 */
+    /* 전체창 열기 닫기(모달) */
 
     $('.colorBtn').on('click', function (e) {
         e.preventDefault();

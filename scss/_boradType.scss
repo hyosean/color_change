@@ -252,6 +252,19 @@
 	}
 }
 
+/* 제이쿼리 ui */
+.ui-icon.ui-icon-circle-triangle-w {
+	background: url(../img/btn/btn_prev.png) no-repeat center center/cover !important;
+	margin-top: -5px !important;
+	background-size: 30px 30px;
+}
+
+.ui-icon.ui-icon-circle-triangle-e {
+	background: url(../img/btn/btn_next.png) no-repeat center center/cover !important;
+	margin-top: -5px !important;
+	background-size: 30px 30px;
+}
+
 /* 타블렛 아이패드 */
 @media screen and (max-width:1000px) {
 	.contant_wrap.sub_contant_wrap {

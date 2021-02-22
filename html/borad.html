@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> one page motion site - borad list </title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css">
 </head>
 
 <body>
@@ -92,26 +93,27 @@
                 </ul>
             </nav>
             <h2 class="sub_title">
-                Board list 
+                Board list
             </h2>
             <div class="borad_search_wrap">
                 <form action="#">
                     <fieldset>
                         <legend class="sr-only">게시글 검색</legend>
-                        <input type="text" id="borad_search" name="search" class="form_basic" title="borad search" placeholder="이곳에 검색어를 입력하세요">
+                        <input type="text" id="borad_search" name="search" class="form_basic" title="borad search"
+                            placeholder="이곳에 검색어를 입력하세요">
                         <button type="submit" class="searchBtn" value="통합검색">
                             Search
                         </button>
                     </fieldset>
                 </form>
             </div>
-         
+
             <div class="borad_btn_wrap">
                 <div class="float_left">
                     <p class="total">TOTAL <strong>001</strong></p>
                 </div>
                 <div class="float_right">
-                    <a href="#" class="serviceBtn boradBtn"> 
+                    <a href="#" class="serviceBtn boradBtn">
                         <i class="fas fa-pen"></i>
                         등록
                     </a>
@@ -150,7 +152,8 @@
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td class="text_left text_width"><a href="#">자유게시판 데이터베이스의 제목 내용이 호출될 자리입니다.자유게시판 데이터베이스의 제목 내용이 호출될 자리입니다.자유게시판 데이터베이스의 제목 내용이 호출될 자리입니다.</a></td>
+                            <td class="text_left text_width"><a href="#">자유게시판 데이터베이스의 제목 내용이 호출될 자리입니다.자유게시판 데이터베이스의 제목
+                                    내용이 호출될 자리입니다.자유게시판 데이터베이스의 제목 내용이 호출될 자리입니다.</a></td>
                             <td>홍길동</td>
                             <td>2021/ 02/ 20</td>
                         </tr>
@@ -216,14 +219,22 @@
                 </p>
                 <a href="#" class="paginationBtn next">NEXT</a>
             </div>
-
+            <!-- <div class="datepicker"></div> -->
         </div>
     </section>
 
     <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/modal.js"></script>
     <!-- 플러그인 -->
+    <script src="../js/plugin/jquery-ui.js"></script>
+    <script src="../js/plugin/jquery-ui.min.js"></script>
+    <script>
+        $(".datepicker").datepicker({
+            inline: true
+        });
+    </script>
 
     <script src="https://kit.fontawesome.com/1499036eeb.js" crossorigin="anonymous"></script>
 </body>
