@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> one page motion site - borad list </title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+</head>
+
+<body>
+    <!-- 햄버거 버튼 클릭시(사이드 GNB 메뉴) -->
+    <div class="gnb_menu">
+        <div class="wrap">
+            <div class="menuBtnClose">
+                <a href="#" class="menuBtn">
+                </a>
+            </div>
+            <div class="menu_header">
+                <div class="user">
+                    <i class="fas fa-user"></i>
+                </div>
+                <p class="user_name">
+                    user_name
+                </p>
+            </div>
+            <div class="menu_contents">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="fas fa-bookmark"></i>
+                            Visual main
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/subpage.html">
+                            <i class="fas fa-folder-open"></i>
+                            Special sub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/borad.html">
+                            <i class="fas fa-copy"></i>
+                            Board type
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/guide.html">
+                            <i class="fas fa-certificate"></i>
+                            UI guide
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_footer sub_menu_footer">
+                <a href="#" class="serviceBtn">
+                    Contact me
+                </a>
+                <a href="../index.html" class="serviceBtn signInBtn">
+                    Logout
+                </a>
+                <!-- <a href="#" class="logout">
+                logout
+                <i class="fas fa-chevron-right"></i>
+            </a> -->
+            </div>
+
+        </div>
+    </div>
+    <section class="contant_wrap sub_contant_wrap">
+        <div class="inner sub_inner">
+            <!-- 비쥬얼 메인 네비 버튼 -->
+            <nav>
+                <a href="#" class="menuBtnWrap">
+                    <i class="menuBtn">
+                    </i>
+                </a>
+                <ul class="contants_lnb contants_2">
+                    <li>
+                        <a href="../html/borad.html" class="contents_sub on">
+                            Board list
+                            <i class="colorBtn"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/borad_box.html" class="contents_sub">
+                            Board box
+                            <i class="colorBtn"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <h2 class="sub_title">
+                Board 등록폼
+            </h2> -->
+
+            <!-- <div class="datepicker"></div> -->
+        </div>
+    </section>
+
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/modal.js"></script>
+    <!-- 플러그인 -->
+    <script src="../js/plugin/jquery-ui.js"></script>
+    <script src="../js/plugin/jquery-ui.min.js"></script>
+    <script>
+        $(".datepicker").datepicker({
+            inline: true
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/1499036eeb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
