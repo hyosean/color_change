@@ -132,6 +132,10 @@ fieldset {
   opacity: 1;
 }
 
+.form_basic:disabled {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
 select.form_basic {
   max-width: 100%;
   line-height: normal;
@@ -146,13 +150,13 @@ select.form_basic::-ms-expand {
 }
 
 textarea.form_basic {
-  height: auto;
+  min-height: 200px;
   padding-top: 12px;
   padding-bottom: 12px;
   overflow: auto;
-  line-height: inherit;
   resize: none;
   color: #777;
+  line-height: 1.2;
 }
 
 label {
@@ -167,6 +171,7 @@ input[type=checkbox], input[type=radio] {
   width: 1px;
   height: 1px;
   opacity: 0;
+  padding: 0;
 }
 
 input[type=checkbox] + label, input[type=radio] + label {
@@ -374,16 +379,20 @@ input[type=radio]:checked + label:before {
   margin: 5px auto;
 }
 
-.borad_btn_wrap {
-  margin-bottom: 5px;
-}
-
-.borad_btn_wrap .float_left {
+.float_left {
   float: left;
 }
 
-.borad_btn_wrap .float_right {
+.float_left + .float_left {
+  margin-left: 5px;
+}
+
+.float_right {
   float: right;
+}
+
+.borad_btn_wrap {
+  margin-bottom: 5px;
 }
 
 .borad_btn_wrap .total {
@@ -407,11 +416,18 @@ input[type=radio]:checked + label:before {
   background-color: #fff;
   border: 2px solid #777;
   color: #666;
+  cursor: pointer;
 }
 
 .borad_btn_wrap .boradBtn:focus, .borad_btn_wrap .boradBtn:hover {
   background-color: #777;
   color: #fff;
+}
+
+.borad_btn_wrap .boradBtn.boradBtnForm {
+  line-height: 15px;
+  padding: 5px 10px;
+  display: inline-block;
 }
 
 .borad_btn_wrap:after {
@@ -2449,6 +2465,69 @@ input[type=radio]:checked + label:before {
 
 .borad_box_wrap .box_list .box_item:focus, .borad_box_wrap .box_list .box_item:hover {
   border-color: #777;
+}
+
+/* borad 등록폼 레이아웃 */
+.borad_list_write {
+  border-top: 2px solid #777;
+  border-bottom: 2px solid #777;
+  margin: 30px 0;
+}
+
+.borad_list_write table {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.borad_list_write tr {
+  border-top: 1px solid #ccc;
+}
+
+.borad_list_write tr:first-child {
+  border-top: none;
+}
+
+.borad_list_write th {
+  background-color: #efefef;
+  color: #555;
+  font-size: 15px;
+}
+
+.borad_list_write td {
+  padding: 3px;
+  min-height: 46px;
+  display: table-cell;
+}
+
+.borad_list_write td input[type=text].form_basic {
+  width: 100%;
+}
+
+.borad_list_write td .input_item {
+  display: inline-block;
+  max-width: 45%;
+}
+
+.borad_list_write td .input_item.input_item_flex {
+  max-width: 100%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.borad_list_write td .input_item.input_item_flex span {
+  margin-left: 5px;
+}
+
+.borad_list_write td .text_guide {
+  font-size: 12px;
+  color: #666;
+}
+
+.borad_list_write td .form_file {
+  height: inherit;
 }
 
 /* 제이쿼리 ui */

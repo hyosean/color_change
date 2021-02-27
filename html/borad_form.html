@@ -92,11 +92,206 @@
                     </li>
                 </ul>
             </nav>
-            <!-- <h2 class="sub_title">
-                Board 등록폼
-            </h2> -->
+            <h2 class="sub_title">
+                Board form
+            </h2>
+            <form action="#">
+                <div class="borad_list_write">
+                    <table>
+                        <caption class="sr-only">게시판 등록</caption>
+                        <colgroup>
+                            <col style="width: 150px;">
+                            <col>
+                            <col style="width: 150px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    작성자명
+                                </th>
+                                <td>
+                                   <input type="text" class="form_basic" value="username" disabled>
+                                </td>
+                                <th scope="row">
+                                    공개 범위
+                                </th>
+                                <td>
+                                    <span class="input_item">
+                                    <input type="radio" name="inputckeck_item" id="ckeck_item1" class="form_basic" checked>
+                                    <label for="ckeck_item1">전체 공개</label>
+                                </span>
+                                <span class="input_item">
+                                    <input type="radio" name="inputckeck_item" id="ckeck_item2" class="form_basic">
+                                    <label for="ckeck_item2">비공개</label>
+                                    </span>
+                                </td>
+                            </tr>
 
-            <!-- <div class="datepicker"></div> -->
+                            <tr>
+                                <th scope="row">
+                                    게시 기간
+                                </th>
+                                <td>
+                                    <!-- <span class="text_item">기간</span> -->
+                                    <span class="input_item">
+                                        <input type="text" id="inputterm1" class="form_basic datepicker" title="게시 기간 시작">
+                                    </span>
+                                    <span class="text_item">~</span>
+                                    <span class="input_item">
+                                        <input type="text" id="inputterm2" class="form_basic  datepicker" title="게시 기간 끝">
+                                    </span>
+                                </td>
+                                <th scope="row">
+                                    카테고리
+                                </th>
+                                <td>
+                                    <select class="form_basic" title="모집 분야 선택">
+                                        <option selected>자유게시판 카테고리1</option>
+                                        <option>자유게시판 카테고리2</option>
+                                        <option>자유게시판 카테고리3</option>
+                                        <option>자유게시판 카테고리4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    제목
+                                </th>
+                                <td colspan="3">
+                                    <input type="text" class="form_basic" title="게시글 제목">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    내용
+                                </th>
+                                <td colspan="3">
+                                    <textarea name="" id="" placeholder="본문 내용 입력해 주세요" class="form_basic" cols="100" rows="10">
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    이미지 등록
+                                </th>
+                                <td colspan="3">
+                                 <span class="input_item input_item_flex">
+                                            <span class="borad_btn_wrap">
+                                                <a href="#" class="boradBtn boradBtnForm">
+                                                    이미지 등록 하기
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <input type="text" class="form_basic form_file" value="등록된 파일명" disabled>
+                                                <span class="text_guide">
+                                                    - 지원 형식 : jpg, jpeg, gif, png, bmp  (1MB이하)
+                                                   </span>
+                                            </span>
+                                        </span>
+                                </td>
+                            </tr>
+                           
+                            <!-- <tr>
+                               
+                            
+                                <td>
+                                    <span class="text_item">중간 발표</span>
+                                    <span class="input_item">
+                                        <input type="text" id="inputterm3" class="form_basic datepicker" title="응모 기간 시작">
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                             
+                                <th scope="row">
+                                    국민 참여
+                                </th>
+                                <td>
+                                    <div class="ckeck_item">
+                                        <input type="checkbox" id="ckeck_item3" class="form_basic">
+                                        <label for="ckeck_item3">국민참여</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    시상 및 혜택
+                                </th>
+                                <td>
+                                    <input type="text" class="form_basic" title="시상 및 혜택" value="여자 모델 각 100만원, 남자 모델 각 50만원">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    총 모델료
+                                </th>
+                                <td>
+                                    <div class="form-row">
+                                        <span class="input-item">
+                                            <input type="text" id="inputpersonnel" class="form_basic wid-185" title="총 모델료">
+                                        </span>
+                                        <span class="text-item">만원</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    포스터
+                                </th>
+                                <td>
+                                    <div class="form-row">
+                                        <span class="input-item">
+                                            이미지 컨텐츠
+                                        </span>
+                                        <span class="input-item">
+                                            <ul class="text-guide">
+                                                <li>- 사이즈 : 가로 297mm x 세로 420mm (5MB이하)</li>
+                                                <li>- 지원 형식 : jpg, jpeg, gif, png, bmp</li>
+                                                <li>- 최대 3개</li>
+                                            </ul>
+                                            <a href="#" class="btn btn-sm btn-outline-primary btn-round-none mt-1">
+                                                포스터 주문 제작 의뢰
+                                            </a>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    관련 link
+                                </th>
+                                <td>
+                                    <input type="text" class="form_basic" title="관련 link" placeholder="캐스팅과 관련된 사이트 link를 입력해 주세요.">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    요청 사항
+                                </th>
+                                <td>
+                                    <input type="text" class="form_basic" title="요청 사항" placeholder="Allcast에게 요청하고 싶은 내용을 입력해 주세요.">
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn borad_btn_wrap float_right">
+                   <div class="float_left">
+                        <a href="../html/borad.html" class="serviceBtn boradBtn boradBtnForm">
+                            <i class="fas fa-bars"></i>
+                            목록
+                        </a>
+                    </div>
+                    <div class="float_left">
+                        <button type="submit" class="serviceBtn boradBtn boradBtnForm">
+                            <i class="fas fa-pen"></i>
+                            등록
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 

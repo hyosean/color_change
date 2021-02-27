@@ -130,6 +130,10 @@ fieldset {
 		color: #ccc;
 		opacity: 1;
 	}
+
+	&:disabled { 
+		background-color: rgba(0,0,0,0.03);
+	}
 }
 
 select.form_basic {
@@ -146,13 +150,13 @@ select.form_basic {
 }
 
 textarea.form_basic {
-	height: auto;
+	min-height: 200px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	overflow: auto;
-	line-height: inherit;
 	resize: none;
 	color: #777;
+	line-height: 1.2;
 }
 
 label {
@@ -171,6 +175,7 @@ input {
 		width: 1px;
 		height: 1px;
 		opacity: 0;
+		padding: 0;
 
 		+label {
 			position: relative;
@@ -201,7 +206,7 @@ input {
 		// &:checked {
 		// 	+label {
 		// 		&:before {
-		// 			border-color: $primary;
+		// 			border-color: ;
 		// 		}
 		// 	}
 		// }
@@ -395,17 +400,17 @@ input {
 		}
 	}
 }
+.float_left {
+	float: left;
+	& + .float_left { margin-left: 5px;}
+}
+
+.float_right {
+	float: right;
+}
 
 .borad_btn_wrap {
 	margin-bottom: 5px;
-
-	.float_left {
-		float: left;
-	}
-
-	.float_right {
-		float: right;
-	}
 
 	.total {
 		font-size: 15px;
@@ -428,11 +433,17 @@ input {
 		background-color: #fff;
 		border: 2px solid #777;
 		color: #666;
+		cursor: pointer;
 
 		&:focus,
 		&:hover {
 			background-color: #777;
 			color: #fff;
+		}
+		&.boradBtnForm {
+			line-height: 15px;
+			padding: 5px 10px;
+			display: inline-block;
 		}
 	}
 

@@ -253,7 +253,59 @@
 }
 
 /* borad 등록폼 레이아웃 */
+.borad_list_write {
+	border-top: 2px solid #777;
+	border-bottom: 2px solid #777;
+	margin: 30px 0;
 
+	table {
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+	}
+	tr { 
+		border-top: 1px solid #ccc;
+	
+		&:first-child {
+			border-top: none;
+		}
+	}
+	th { 
+		background-color: #efefef;
+		color: #555;
+		font-size: 15px;
+	}
+	td { 
+		padding: 3px;
+		min-height: 46px;
+		display: table-cell;
+
+		input[type=text].form_basic {
+			width: 100%;
+		}
+		.input_item {
+			display: inline-block;
+			max-width: 45%;
+
+			&.input_item_flex { 
+				max-width: 100%;
+				float: left;
+				display: flex;
+
+				span {
+					margin-left: 5px;
+				}
+			}
+		}
+		.text_guide {
+			font-size: 12px;
+			color: #666;
+		}
+		.form_file {
+			height: inherit;
+		}
+	}
+}
 
 /* 제이쿼리 ui */
 .ui-icon.ui-icon-circle-triangle-w {
