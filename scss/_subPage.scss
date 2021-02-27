@@ -265,6 +265,10 @@
 								// }
 							}
 						}
+						&.contants_3 {
+							left: 20%;
+							width: 70%;
+						}
 					}
 
 					&.on {
@@ -381,7 +385,7 @@
 
 }
 
-// /* 모바일 */
-// @media screen and (max-width:539px) {
+/* 모바일 */
+@media screen and (max-width:600px) {
 
-// }
+}
