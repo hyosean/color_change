@@ -52,6 +52,21 @@
 
     });
 
+    /*------- 서브페이지 상단 lnb 슬라이드시 그림자 --------*/
+    $(window).on('scroll', function() {
+        var navTop = $('.sub_inner > nav').offset().top;
+        console.log(navTop);
+        if( navTop > 30) {
+            $('.sub_inner > nav').css({
+                'box-shadow':'0px 0px 7px rgb(0,0,0,0.3)'
+            })
+        }else {
+            $('.sub_inner > nav').css({
+                'box-shadow': 'none'
+            })
+        }
+    });
+
     /*------- 사이드 gnb 메뉴버튼 --------*/
     //사이드 메뉴열기
     menuOpen.on('click', function () {

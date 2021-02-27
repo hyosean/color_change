@@ -408,10 +408,28 @@
 		}
 	}
 
+	/* borad 등록폼 레이아웃 */
+	.borad_list_write {
+		th { 
+			font-size: 13px;
+		}
+		td { 
+			.input_item {
+				display: inline-block;
+				max-width: 40%;
+
+				&.mobile_full {
+					display: block;
+					max-width: 100%;
+				}
+			}
+
+		}
+	}
 }
 
 /* 모바일 */
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
 	.sub_contant_wrap {
 		.sub_inner {
 			nav {

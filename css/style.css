@@ -168,7 +168,6 @@ label {
 }
 
 input[type=checkbox], input[type=radio] {
-  position: absolute;
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -417,6 +416,8 @@ input[type=radio]:checked + label:before {
   background-color: #fff;
   border: 2px solid #777;
   color: #666;
+  text-align: center;
+  word-break: keep-all;
   cursor: pointer;
 }
 
@@ -426,8 +427,8 @@ input[type=radio]:checked + label:before {
 }
 
 .borad_btn_wrap .boradBtn.boradBtnForm {
-  line-height: 15px;
-  padding: 5px 10px;
+  height: auto;
+  padding: 4px 10px;
   display: inline-block;
 }
 
@@ -2625,10 +2626,22 @@ input[type=radio]:checked + label:before {
             align-items: flex-start;
     font-size: 12px;
   }
+  /* borad 등록폼 레이아웃 */
+  .borad_list_write th {
+    font-size: 13px;
+  }
+  .borad_list_write td .input_item {
+    display: inline-block;
+    max-width: 40%;
+  }
+  .borad_list_write td .input_item.mobile_full {
+    display: block;
+    max-width: 100%;
+  }
 }
 
 /* 모바일 */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .sub_contant_wrap .sub_inner nav .contants_2 {
     left: 100px;
     width: 55% !important;
