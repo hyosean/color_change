@@ -305,7 +305,12 @@
 			height: inherit;
 		}
 	}
+	
+	.dply_mb {
+		display: none;
+	}
 }
+
 
 /* 제이쿼리 ui */
 .ui-icon.ui-icon-circle-triangle-w {
@@ -438,6 +443,11 @@
 				.contants_2 {
 					left: 100px;
 					width: 55% !important;
+					li {
+						a {
+							line-height: 34px !important;
+						}
+					}
 				}
 			}
 		}
@@ -445,11 +455,17 @@
 
 	.sub_title {
 		font-size: 24px;
+		margin-top: 40px;
 	}
 
-	.sub_title_md {}
+	.sub_title_md {
+    font-size: 22px;
+    line-height: 26px;
+	}
 
-	.sub_title_sm {}
+	.sub_title_sm {
+		margin-top: 10px;
+	}
 
 	/* borad 리스트 레이아웃 */
 	.borad_list_wrap {
@@ -523,4 +539,28 @@
 		}
 	}
 
+	/* borad 등록폼 레이아웃 */
+	.borad_list_write {
+		margin-top: 10px;
+		td { 
+			select.form_basic {
+				width: 100%;
+			}
+			.text_guide {
+				font-size: 12px;
+				color: #666;
+			}
+		}
+		
+		.dply_pc {
+			display: none;
+		}
+		.dply_mb {
+			display: table-row;
+		}
+	}
+
+	.mb_3 {
+		margin-bottom: 30px !important;
+	}
 }

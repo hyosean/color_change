@@ -106,7 +106,7 @@
                             <col>
                         </colgroup>
                         <tbody>
-                            <tr>
+                            <tr class="dply_pc">
                                 <th scope="row">
                                     작성자명
                                 </th>
@@ -127,8 +127,7 @@
                                     </span>
                                 </td>
                             </tr>
-
-                            <tr>
+                            <tr class="dply_pc">
                                 <th scope="row">
                                     게시 기간
                                 </th>
@@ -154,6 +153,58 @@
                                     </select>
                                 </td>
                             </tr>
+                            <!-- 모바일 -->
+                            <tr class="dply_mb">
+                                <th scope="row">
+                                    작성자명
+                                </th>
+                                <td colspan="3">
+                                   <input type="text" class="form_basic" value="username" disabled>
+                                </td>
+                            </tr>
+                            <tr class="dply_mb">
+                                <th scope="row">
+                                    공개 범위
+                                </th>
+                                <td colspan="3">
+                                    <span class="input_item mobile_full">
+                                    <input type="radio" name="inputckeck_item" id="ckeck_item1" class="form_basic" checked>
+                                    <label for="ckeck_item1">전체 공개</label>
+                                </span>
+                                <span class="input_item mobile_full">
+                                    <input type="radio" name="inputckeck_item" id="ckeck_item2" class="form_basic">
+                                    <label for="ckeck_item2">비공개</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="dply_mb">
+                                <th scope="row">
+                                    게시 기간
+                                </th>
+                                <td colspan="3">
+                                    <span class="input_item">
+                                        <input type="text" id="inputterm1" class="form_basic datepicker" title="게시 기간 시작">
+                                    </span>
+                                    <span class="text_item">~</span>
+                                    <span class="input_item">
+                                        <input type="text" id="inputterm2" class="form_basic  datepicker" title="게시 기간 끝">
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="dply_mb">
+                                <th scope="row">
+                                    카테고리
+                                </th>
+                                <td colspan="3">
+                                    <select class="form_basic" title="모집 분야 선택">
+                                        <option selected>자유게시판 카테고리1</option>
+                                        <option>자유게시판 카테고리2</option>
+                                        <option>자유게시판 카테고리3</option>
+                                        <option>자유게시판 카테고리4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <!-- 모바일 -->
                             <tr>
                                 <th scope="row">
                                     제목
@@ -284,7 +335,7 @@
                             목록
                         </a>
                     </div>
-                    <div class="float_left">
+                    <div class="float_left mb_3">
                         <button type="submit" class="serviceBtn boradBtn boradBtnForm">
                             <i class="fas fa-pen"></i>
                             등록
